@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="telephone=no" name="format-detection">
+    <meta content="email=no" name="format-detection">
+    <title>看房</title>
+    <link rel="stylesheet" href="../css/ceshi.css">
+    <!--<link rel="stylesheet" type="text/css" href="../css/ionic.css"/>-->
+</head>
+<body style="background-color:white;">
+<div id="top" style="background-color: #F9F9F9">
+    <div id="top1" onclick="goBack()">
+        <img src="../image/left.png" alt="" style="width: 17px;height: 17px;top: 5px;">
+    </div>
+    <div id="top2">
+        <h3 style="font-size: 18px;margin-top: 18px"><strong>看房协议</strong></h3>
+    </div>
+    <div id="top3" onclick="openWin('houseAgreementDrafts')" style="color: #85CFF5;width: 40%;font-size: 16px">
+        <h4>保存到草稿箱</h4>
+    </div>
+</div>
+<div class="inspection">
+    <div class="fillInfos">
+        <div class="fillinfo">
+            <div style="font-size: 12px;color: #F2F2F2">电话：</div><input type="text" placeholder="请输入手机号码">
+        </div>
+        <div class="fillinfo">
+            <div style="font-size: 12px;color: #F2F2F2">姓名：</div><input type="text" style="width: 60%" placeholder="请输入用户姓名">
+            <span class="gender">先生</span><span class="gender">女士</span>
+        </div>
+        <div class="fillinfo">
+            <div style="font-size: 12px;color: #F2F2F2">身份证号：</div><input type="text" placeholder="请输入身份证号码">
+        </div>
+        <div class="fillinfo">
+            <div style="font-size: 12px;color: #F2F2F2">联系地址：</div><input type="text" placeholder="请输入客户的联系地址（非必填）">
+        </div>
+        <div class="fillinfo">
+            <div style="font-size: 12px;color: #F2F2F2">类型：</div><input type="text" placeholder="购房">
+        </div>
+        <div class="fillinfo">
+            <div style="font-size: 12px;color: #F2F2F2">查看房源：</div><input type="text" placeholder="">
+        </div>
+        <div class="fillinfo">
+            <div style="font-size: 12px;color: #F2F2F2">带看经纪人：</div><input type="text" placeholder="刘顺强">
+        </div>
+        <div class="fillinfo">
+            <div style="font-size: 12px;color: #F2F2F2">带看时间：</div><input type="text" placeholder="2016-09-30">
+        </div>
+        <button onclick="openWin('agreement1')">下一步</button>
+    </div>
+</div>
+
+<script src="../script/jquery-1.8.2.min.js"></script>
+<script src="../script/angular.js"></script>
+<script src="../script/anotherPage.js"></script>
+<script src="../script/api.js"></script>
+<script src="../script/tool.js"></script>
+<script src="../script/fastclick.js"></script>
+</body>
+</html>

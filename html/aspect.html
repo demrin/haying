@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="ionicApp">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="telephone=no" name="format-detection">
+    <meta content="email=no" name="format-detection">
+    <title>朝向</title>
+    <link rel="stylesheet" href="../css/ceshi.css">
+    <!--<link rel="stylesheet" type="text/css" href="../css/ionic.css"/>-->
+    <link rel="stylesheet" type="text/css" href="../js/ionic.min.css"/>
+    <script src="../js/ionic.bundle.min.js"></script>
+</head>
+<body style="background-color:white;" ng-controller="MainCtrl">
+<div id="top" style="background-color: #F9F9F9">
+    <div id="top1" onclick="goBack()">
+        <img src="../image/left.png" alt="" style="width: 17px;height: 17px;top: 5px;">
+    </div>
+    <div id="top2">
+        <h3 style="font-size: 18px;margin-top: 18px"><strong>朝向</strong></h3>
+    </div>
+    <div id="top3" onclick="openWin('houseFollow')" style="color: #85CFF5;">
+        <!--<h4>保存</h4>-->
+    </div>
+</div>
+
+<div class="aspect">
+
+    <script type="text/javascript">
+        angular.module('ionicApp', ['ionic'])
+
+            .controller('MainCtrl', function($scope) {
+
+                $scope.clientSideList = [
+                    { text: "请选择", value: "请选择" },
+                    { text: "东", value: "东" },
+                    { text: "南", value: "南" },
+                    { text: "西", value: "西" },
+                    { text: "北", value: "北" },
+                     { text: "东南", value: "东南" },
+                     { text: "东北", value: "东北" },
+                     { text: "西南", value: "西南" },
+                     { text: "西北", value: "西北" },
+                     { text: "南北", value: "南北" },
+                     { text: "东西", value: "东西" },
+                ];
+
+                $scope.data = {
+                    clientSide: '请选择'
+                };
+
+            });
+    </script>
+
+    <!--<ion-content>-->
+        <div class="list">
+            <ion-radio ng-repeat="item in clientSideList"
+                       ng-value="item.value"
+                       ng-model="data.clientSide">
+                {{ item.text }}
+            </ion-radio>
+        </div>
+    <!--</ion-content>-->
+
+</div>
+
+<script src="../script/jquery-1.8.2.min.js"></script>
+<!--<script src="../script/angular.js"></script>-->
+<script src="../script/anotherPage.js"></script>
+<script src="../script/api.js"></script>
+<script src="../script/tool.js"></script>
+<script src="../script/fastclick.js"></script>
+</body>
+</html>

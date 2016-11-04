@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="telephone=no" name="format-detection">
+    <meta content="email=no" name="format-detection">
+    <title>国贸阳光</title>
+    <link rel="stylesheet" href="../css/ceshi.css">
+    <link rel="stylesheet" href="../js/MUI/mui.min.css">
+</head>
+<body style="background-color:white;" ng-app="starter" ng-controller="actionsheetCtl">
+<div id="top" style="background-color: #F9F9F9">
+    <div id="top1" onclick="goBack()">
+        <img src="../image/left.png" alt="" style="width: 17px;height: 17px;top: 5px;">
+    </div>
+    <div id="top2">
+        <h3 style="font-size: 18px;margin-top: 22px"><strong>国贸阳光</strong></h3>
+    </div>
+    <div id="top3" class="tianjiaicon">
+        <!--<img src="../image/+icon.png" alt="">-->
+    </div>
+</div>
+<div id="sourceselect" style="background-color: white;">
+    <div class="select-top" onclick="chooseAdd()">
+        <span class="select-title">厦门</span>
+        <span><img id="selectadd" class="selectadd" src="../image/angle-down.png" name="0" alt="0" style="width: 15px;height: 15px;padding-top: 5px;"></span>
+    </div>
+    <div class="select-top" onclick="chooseStyle()">
+        <span class="select-title">类型</span>
+        <span><img id="selecttype" class="selectadd" src="../image/angle-down.png" alt="0" style="width: 15px;height: 15px;padding-top: 5px;"></span>
+    </div>
+    <div class="select-top" onclick="choosePrice()">
+        <span class="select-title">总价</span>
+        <span><img id="selectprice" class="selectadd" src="../image/angle-down.png" alt="0" style="width: 15px;height: 15px;padding-top: 5px;"></span>
+    </div>
+    <div class="select-top" onclick="chooseHouse()">
+        <span class="select-title">房型</span>
+        <span><img id="selecthousestyle" class="selectadd" src="../image/angle-down.png" alt="0" style="width: 15px;height: 15px;padding-top: 5px;"></span>
+    </div>
+    <div class="select-top" onclick="chooseMore()">
+        <span class="select-title">更多</span>
+        <span><img id="selectmore" class="selectadd" src="../image/angle-down.png" alt="0" style="width: 15px;height: 15px;padding-top: 5px;"></span>
+    </div>
+</div>
+
+<div id="Inventorymanagement" class="con_one_1">
+
+    <div class="im-housedetail" onclick="openWin('houseDetail1')">
+        <div class="imhousedetail-left im">
+            <img src="../image/newpic.png" alt="" style="width: 100%;">
+        </div>
+        <div class="imhousedetail-right im im-right">
+            <div class="ir1">国贸阳光经典户型，小区中庭位置...</div>
+            <div class="ir2 ir"><span>四室二厅</span><span>158㎡</span></div>
+            <div class="ir3 ir"><span>祥店</span><span>国贸阳光</span></div>
+            <div class="ir4 "><span class="yaoshi">有钥匙</span> <span class="priceright im-pr">670万</span></div>
+        </div>
+    </div>
+    <div class="im-housedetail" onclick="openWin('houseDetail1')">
+        <div class="imhousedetail-left im">
+            <img src="../image/newpic.png" alt="" style="width: 100%;">
+        </div>
+        <div class="imhousedetail-right im im-right">
+            <div class="ir1">国贸阳光经典户型，小区中庭位置...</div>
+            <div class="ir2 ir"><span>四室二厅</span><span>158㎡</span></div>
+            <div class="ir3 ir"><span>祥店</span><span>国贸阳光</span></div>
+            <div class="ir4 "><span class="yaoshi">有钥匙</span> <span class="priceright im-pr">670万</span></div>
+        </div>
+    </div>
+    <div class="im-housedetail" onclick="openWin('houseDetail1')">
+        <div class="imhousedetail-left im">
+            <img src="../image/newpic.png" alt="" style="width: 100%;">
+        </div>
+        <div class="imhousedetail-right im im-right">
+            <div class="ir1">国贸阳光经典户型，小区中庭位置...</div>
+            <div class="ir2 ir"><span>四室二厅</span><span>158㎡</span></div>
+            <div class="ir3 ir"><span>祥店</span><span>国贸阳光</span></div>
+            <div class="ir4 "><span class="yaoshi">有钥匙</span> <span class="priceright im-pr">670万</span></div>
+        </div>
+    </div>
+    <div class="im-housedetail" onclick="openWin('houseDetail1')">
+        <div class="imhousedetail-left im">
+            <img src="../image/newpic.png" alt="" style="width: 100%;">
+        </div>
+        <div class="imhousedetail-right im im-right">
+            <div class="ir1">国贸阳光经典户型，小区中庭位置...</div>
+            <div class="ir2 ir"><span>四室二厅</span><span>158㎡</span></div>
+            <div class="ir3 ir"><span>祥店</span><span>国贸阳光</span></div>
+            <div class="ir4 "><span class="yaoshi">有钥匙</span> <span class="priceright im-pr">670万</span></div>
+        </div>
+    </div>
+    <div class="im-housedetail" onclick="openWin('houseDetail1')">
+        <div class="imhousedetail-left im">
+            <img src="../image/newpic.png" alt="" style="width: 100%;">
+        </div>
+        <div class="imhousedetail-right im im-right">
+            <div class="ir1">国贸阳光经典户型，小区中庭位置...</div>
+            <div class="ir2 ir"><span>四室二厅</span><span>158㎡</span></div>
+            <div class="ir3 ir"><span>祥店</span><span>国贸阳光</span></div>
+            <div class="ir4 "><span class="yaoshi">有钥匙</span> <span class="priceright im-pr">670万</span></div>
+        </div>
+    </div>
+    <div class="im-housedetail" onclick="openWin('houseDetail1')">
+        <div class="imhousedetail-left im">
+            <img src="../image/newpic.png" alt="" style="width: 100%;">
+        </div>
+        <div class="imhousedetail-right im im-right">
+            <div class="ir1">国贸阳光经典户型，小区中庭位置...</div>
+            <div class="ir2 ir"><span>四室二厅</span><span>158㎡</span></div>
+            <div class="ir3 ir"><span>祥店</span><span>国贸阳光</span></div>
+            <div class="ir4 "><span class="yaoshi">有钥匙</span> <span class="priceright im-pr">670万</span></div>
+        </div>
+    </div>
+    <div class="im-housedetail" onclick="openWin('houseDetail1')">
+        <div class="imhousedetail-left im">
+            <img src="../image/newpic.png" alt="" style="width: 100%;">
+        </div>
+        <div class="imhousedetail-right im im-right">
+            <div class="ir1">国贸阳光经典户型，小区中庭位置...</div>
+            <div class="ir2 ir"><span>四室二厅</span><span>158㎡</span></div>
+            <div class="ir3 ir"><span>祥店</span><span>国贸阳光</span></div>
+            <div class="ir4 "><span class="yaoshi">有钥匙</span> <span class="priceright im-pr">670万</span></div>
+        </div>
+    </div>
+
+</div>
+
+<!--排序-->
+<a href="#popover" id="openPopover">
+    <a href="#sort" ><span class="sort" ng-click="show()"><img src="../image/sort.png" alt="" style="width: 59px;" ng-click="clicksort"></span></a>
+</a>
+
+<div id="sort" class="mui-popover mui-popover-bottom mui-popover-action ">
+    <ul class="mui-table-view">
+        <li class="mui-table-view-cell" style="border-radius: 10px;">
+            <a href="#">默认排序</a>
+        </li>
+        <li class="mui-table-view-cell" style="border-radius: 5px;">
+            <a href="#">总价由小到大</a>
+        </li>
+        <li class="mui-table-view-cell" style="border-radius: 5px;">
+            <a href="#">总价由大到小</a>
+        </li>
+        <li class="mui-table-view-cell" style="border-radius: 5px;">
+            <a href="#">单价由小到大</a>
+        </li>
+        <li class="mui-table-view-cell" style="border-radius: 5px;">
+            <a href="#">总价由大到小</a>
+        </li>
+        <li class="mui-table-view-cell" style="border-radius: 5px;">
+            <a href="#">面积由小到大</a>
+        </li>
+        <li class="mui-table-view-cell" style="border-radius: 5px;">
+            <a href="#">总价由大到小</a>
+        </li>
+    </ul>
+</div>
+<!--排序-->
+
+<!--选择出售类型-->
+<div id="choosehousestyle" class="mui-popover mui-popover-bottom mui-popover-action ">
+    <ul class="mui-table-view">
+        <li class="mui-table-view-cell" style="border-radius: 10px;">
+            <a href="#">选择房源类型</a>
+        </li>
+        <li class="mui-table-view-cell" style="border-radius: 5px;">
+            <a href="#">出售住宅</a>
+        </li>
+        <li class="mui-table-view-cell" style="border-radius: 5px;">
+            <a href="#">出售商铺</a>
+        </li>
+        <li class="mui-table-view-cell" style="border-radius: 5px;">
+            <a href="#">出售写字楼</a>
+        </li>
+        <li class="mui-table-view-cell" style="border-radius: 5px;">
+            <a href="#">出售厂房</a>
+        </li>
+        <li class="mui-table-view-cell" style="border-radius: 5px;">
+            <a href="#">出售地皮</a>
+        </li>
+        <li class="mui-table-view-cell" style="border-radius: 5px;">
+            <a href="#">出售车位</a>
+        </li>
+        <li class="mui-table-view-cell" style="border-radius: 5px;">
+            <a href="#">出售其他</a>
+        </li>
+    </ul>
+    <ul class="mui-table-view">
+        <li class="mui-table-view-cell">
+            <a href="#sheet1"><b>取消</b></a>
+        </li>
+    </ul>
+</div>
+
+<div class="positionadd chooseAdd" style="">
+    <div class="positionMiddle">
+        <div class="positionadd1"  style="width: 50%" id="filter1" >
+            <div class="firstFilter posAdd">
+                全城
+            </div>
+            <div class="firstFilter posAdd">
+                附近
+            </div>
+            <div class="firstFilter posAdd">
+                思明
+            </div>
+            <div class="firstFilter posAdd">
+                湖里
+            </div>
+            <div class="firstFilter posAdd">
+                翔安
+            </div>
+            <div class="firstFilter posAdd">
+                集美
+            </div>
+            <div class="firstFilter posAdd">
+                海沧
+            </div>
+            <div class="firstFilter posAdd">
+                同安
+            </div>
+        </div>
+        <div style="width: 1px;height: 200px;background-color: rgb(233,233,233);position: absolute;left: 50%;top: 0;z-index: 999"></div>
+        <div class="positionadd1"  style="width: 50%" id="filter3">
+            <div class="firstFilter posAdd">
+                中国
+            </div>
+        </div>
+    </div>
+</div>
+<div class="positionadd chooseStyle" style="">
+    <div class="positionMiddle">
+        <div class="positionadd1"  style="width: 100%;height: 260px;" id="filter2" >
+            <div class="firstFilter posAdd">
+                住宅
+            </div>
+            <div class="firstFilter posAdd">
+                别墅
+            </div>
+            <div class="firstFilter posAdd">
+                商铺
+            </div>
+            <div class="firstFilter posAdd">
+                写字楼
+            </div>
+            <div class="firstFilter posAdd">
+                厂房
+            </div>
+            <div class="firstFilter posAdd">
+                仓库
+            </div>
+            <div class="firstFilter posAdd">
+                地皮
+            </div>
+            <div class="firstFilter posAdd">
+                其他
+            </div>
+        </div>
+    </div>
+</div>
+<div class="positionadd choosePrice" style="">
+    <div class="positionMiddle">
+        <div class="positionadd1"  style="width: 100%;height: 220px;" id="filter2" >
+            <div class="firstFilter posAdd">
+                不限
+            </div>
+            <div class="firstFilter posAdd">
+                300-500万
+            </div>
+            <div class="firstFilter posAdd">
+                500-800万
+            </div>
+            <div class="firstFilter posAdd">
+                800-1000万
+            </div>
+            <div class="firstFilter posAdd">
+                1000万以上
+            </div>
+            <div class="firstFilter posAdd">
+                自定义价格
+                <input type="text" style="width: 20%;height: 30px;margin: 5px 0;" placeholder="最小">——
+                <input type="text" style="width: 20%;height: 30px;margin: 5px 0;" placeholder="最大">
+            </div>
+        </div>
+    </div>
+</div>
+<div class="positionadd chooseHouse" style="">
+    <div class="positionMiddle">
+        <div class="positionadd1"  style="width: 100%;height: 260px;" id="filter2" >
+            <div class="firstFilter posAdd">
+                不限
+            </div>
+            <div class="firstFilter posAdd">
+                1室
+            </div>
+            <div class="firstFilter posAdd">
+                2室
+            </div>
+            <div class="firstFilter posAdd">
+                3室
+            </div>
+            <div class="firstFilter posAdd">
+                4室
+            </div>
+            <div class="firstFilter posAdd">
+                5室
+            </div>
+        </div>
+    </div>
+</div>
+<div class="positionadd chooseMore" style="">
+    <div class="positionMiddle">
+        <button class="positionadd1"  style="width: 100%;height: 260px;" id="" >
+            <div class="firstFilter posAdd" style="text-align: left">
+                朝向
+            </div>
+            <div class="firstFilter posAdd" style="text-align: left">
+                面积（平米）
+            </div>
+            <div class="firstFilter posAdd" style="text-align: left">
+                装修
+            </div>
+            <div class="firstFilter posAdd" style="text-align: left">
+                楼层
+            </div>
+            <div class="firstFilter posAdd" style="text-align: left">
+                看房
+            </div>
+            <div class="firstFilter posAdd" style="text-align: left">
+                产权
+            </div>
+            <div class="firstFilter posAdd">
+                清空筛选条件
+            </div>
+            <div class="firstFilter posAdd" style="text-align: center;padding: 0 10px;">
+                <button style="background-color: #26A69A;width: 100%;padding: 5px;">
+                    产权
+                </button>
+            </div>
+    </div>
+</div>
+<div class="hidshow" onclick="chooseAdd();"></div>
+
+
+<script src="../script/jquery-1.8.2.min.js"></script>
+<script src="../script/angular.js"></script>
+<script src="../script/anotherPage.js"></script>
+<script src="../script/api.js"></script>
+<script src="../script/tool.js"></script>
+<script src="../script/fastclick.js"></script>
+<script src="../js/MUI/mui.min.js"></script>
+<script src="../js/InventoryManagement.js"></script>
+</body>
+</html>

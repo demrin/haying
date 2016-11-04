@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="telephone=no" name="format-detection">
+    <meta content="email=no" name="format-detection">
+    <title>经纪人的房源</title>
+    <link rel="stylesheet" href="../css/ceshi.css">
+    <link rel="stylesheet" type="text/css" href="../css/ionic.css"/>
+</head>
+<body style="background-color:white;" ng-app="starter" ng-controller="actionsheetCtl">
+<div id="top" style="background-color: #F9F9F9">
+    <div id="top1" onclick="goBack()">
+        <img src="../image/left.png" alt="" style="width: 17px;height: 17px;top: 5px;">
+    </div>
+    <div id="top2">
+        <h3 style="font-size: 18px;margin-top: 18px"><strong>陈凯歌的房源</strong></h3>
+    </div>
+    <div id="top3" class="tianjiaicon">
+        <!--<img src="../image/+icon.png" alt="">-->
+    </div>
+</div>
+<script type="text/javascript">
+    //    angular.module('starter', ['ionic'])
+    //
+    //            .run(function($ionicPlatform) {
+    //                $ionicPlatform.ready(function() {
+    //                    // Hide the accessory bar by default (remove this to show the accessory bar above the keyboard
+    //                    // for form inputs)
+    //                    if(window.cordova && window.cordova.plugins.Keyboard) {
+    //                        cordova.plugins.Keyboard.hideKeyboardAccessoryBar(true);
+    //                    }
+    //                    if(window.StatusBar) {
+    //                        StatusBar.styleDefault();
+    //                    }
+    //                });
+    //            })
+    //
+    //            .controller( 'actionsheetCtl',['$scope','$ionicActionSheet','$timeout' ,function($scope,$ionicActionSheet,$timeout){
+    //                $scope.show = function() {
+    //
+    //                    var hideSheet = $ionicActionSheet.show({
+    //                        buttons: [
+    //                            { text: '<b>Share</b> This' },
+    //                            { text: 'Move' }
+    //                        ],
+    //                        destructiveText: 'Delete',
+    //                        titleText: 'Modify your album',
+    //                        cancelText: 'Cancel',
+    //                        cancel: function() {
+    //                            // add cancel code..
+    //                        },
+    //                        buttonClicked: function(index) {
+    //                            return true;
+    //                        }
+    //                    });
+    //
+    //                    $timeout(function() {
+    //                        hideSheet();
+    //                    }, 2000);
+    //
+    //                };
+    //            }])
+</script>
+<div id="sourceselect" style="background-color: white;">
+    <div class="select-top">
+        <span class="select-title">厦门</span>
+        <span><img id="selectadd" src="../image/angle-down.png" alt="0" style="width: 15px;height: 15px;padding-top: 5px;"></span>
+    </div>
+    <div class="select-top">
+        <span class="select-title">类型</span>
+        <span><img id="selecttype" src="../image/angle-down.png" alt="0" style="width: 15px;height: 15px;padding-top: 5px;"></span>
+    </div>
+    <div class="select-top">
+        <span class="select-title">总价</span>
+        <span><img id="selectprice" src="../image/angle-down.png" alt="0" style="width: 15px;height: 15px;padding-top: 5px;"></span>
+    </div>
+    <div class="select-top">
+        <span class="select-title">房型</span>
+        <span><img id="selecthousestyle" src="../image/angle-down.png" alt="0" style="width: 15px;height: 15px;padding-top: 5px;"></span>
+    </div>
+    <div class="select-top">
+        <span class="select-title">更多</span>
+        <span><img id="selectmore" src="../image/angle-down.png" alt="0" style="width: 15px;height: 15px;padding-top: 5px;"></span>
+    </div>
+</div>
+<div id="Inventorymanagement">
+
+</div>
+<span class="sort"><img src="../image/sort1.png" alt="" ng-click="clicksort"></span>
+<script src="../script/jquery-1.8.2.min.js"></script>
+<script src="../script/angular.js"></script>
+<script src="../script/anotherPage.js"></script>
+<script src="../script/api.js"></script>
+<script src="../script/tool.js"></script>
+<script src="../script/fastclick.js"></script>
+</body>
+</html>

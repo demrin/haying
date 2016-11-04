@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="telephone=no" name="format-detection">
+    <meta content="email=no" name="format-detection">
+    <title>客源管理-求购</title>
+    <link rel="stylesheet" href="../css/ceshi.css">
+    <link rel="stylesheet" href="../js/MUI/mui.min.css">
+</head>
+<body style="background-color:white;">
+<div id="top" style="background-color:#F9F9F9;">
+    <div id="top1" onclick="goBack()">
+        <img src="../image/left.png" alt="">
+    </div>
+    <div id="top2" class="">
+        <h4 id="slider" class="mui-slider mui-segmented-control" style="top: 9px;position: relative;border: none;">
+            <span style="font-size: 14px;display: inline-block;width: 50%;top: 4px;padding: 1px;border: 1px solid #969696;border-radius:25px;">
+                <a class="mui-control-item mui-active" href="#item1mobile"style="height: 28px;padding: 2px 10px 0;border-radius: 25px;position: relative;">求购</a>
+                <a class="mui-control-item" href="#item2mobile"style="height: 28px;padding: 2px 10px 0;border-radius: 25px;position: relative;border: none;">求租</a>
+            </span>
+        </h4>
+    </div>
+    <div id="top3" style="width: 50%;">
+        <img class="mysource" src="../image/allsource.png" alt="" style="width: 38px;height: 15px;">
+        <img class="IM-add" src="../image/+icon.png" alt="">
+    </div>
+</div>
+
+<div id="sourceselect" style="background-color: white;">
+    <div class="select-top" onclick="chooseAdd()">
+        <span class="select-title">厦门</span>
+        <span><img id="selectadd" class="selectadd" src="../image/angle-down.png" name="0" alt="0" style="width: 15px;height: 15px;padding-top: 5px;"></span>
+    </div>
+    <div class="select-top" onclick="chooseStyle()">
+        <span class="select-title">类型</span>
+        <span><img id="selecttype" class="selectadd" src="../image/angle-down.png" alt="0" style="width: 15px;height: 15px;padding-top: 5px;"></span>
+    </div>
+    <div class="select-top" onclick="choosePrice()">
+        <span class="select-title">总价</span>
+        <span><img id="selectprice" class="selectadd" src="../image/angle-down.png" alt="0" style="width: 15px;height: 15px;padding-top: 5px;"></span>
+    </div>
+    <div class="select-top" onclick="chooseHouse()">
+        <span class="select-title">房型</span>
+        <span><img id="selecthousestyle" class="selectadd" src="../image/angle-down.png" alt="0" style="width: 15px;height: 15px;padding-top: 5px;"></span>
+    </div>
+    <div class="select-top" onclick="chooseMore()">
+        <span class="select-title">更多</span>
+        <span><img id="selectmore" class="selectadd" src="../image/angle-down.png" alt="0" style="width: 15px;height: 15px;padding-top: 5px;"></span>
+    </div>
+</div>
+
+<div class="mui-slider-group">
+    <div id="item1mobile" class="mui-slider-item mui-control-content mui-active">
+        <div id="scroll1" class="mui-scroll-wrapper">
+            <div class="mui-scroll">
+                <div id="Inventorymanagement" style="padding-top: 120px;">
+
+                    <div class="im-housedetail" onclick="openWin('sourceDetail')">
+                        <div class="imhousedetail-left im">
+                            <img src="../image/no-pic.png" alt="" style="width: 100%;">
+                        </div>
+                        <div class="imhousedetail-right im ">
+                            <div class="askToBuyInfos"><span>陆可女士</span><span>求购100-150㎡</span><span>两室</span></div>
+                            <div class="ir2 ask-to-buy"><h3>13300817769</h3></div>
+                            <div class="ir4 hopeAdd"><span class="add">五缘湾</span><span class="add">国贸蓝海</span> <span class="sourceR">600-700万</span></div>
+                        </div>
+                    </div>
+                    <div class="im-housedetail" onclick="openWin('sourceDetail')">
+                        <div class="imhousedetail-left im">
+                            <img src="../image/no-pic.png" alt="" style="width: 100%;">
+                        </div>
+                        <div class="imhousedetail-right im ">
+                            <div class="askToBuyInfos"><span>陆可女士</span><span>求购100-150㎡</span><span>两室</span></div>
+                            <div class="ir2 ask-to-buy"><h3>13300817769</h3></div>
+                            <!--<div class="ir3 ir"><span>祥店</span><span>国贸阳光</span></div>-->
+                            <div class="ir4 hopeAdd"><span class="add">五缘湾</span><span class="add">国贸蓝海</span> <span class="sourceR">600-700万</span></div>
+                        </div>
+                    </div>
+                    <div class="im-housedetail" onclick="openWin('sourceDetail')">
+                        <div class="imhousedetail-left im">
+                            <img src="../image/no-pic.png" alt="" style="width: 100%;">
+                        </div>
+                        <div class="imhousedetail-right im ">
+                            <div class="askToBuyInfos"><span>陆可女士</span><span>求购100-150㎡</span><span>两室</span></div>
+                            <div class="ir2 ask-to-buy"><h3>13300817769</h3></div>
+                            <!--<div class="ir3 ir"><span>祥店</span><span>国贸阳光</span></div>-->
+                            <div class="ir4 hopeAdd"><span class="add">五缘湾</span><span class="add">国贸蓝海</span> <span class="sourceR">600-700万</span></div>
+                        </div>
+                    </div>
+                    <div class="im-housedetail" onclick="openWin('sourceDetail')">
+                        <div class="imhousedetail-left im">
+                            <img src="../image/no-pic.png" alt="" style="width: 100%;">
+                        </div>
+                        <div class="imhousedetail-right im ">
+                            <div class="askToBuyInfos"><span>陆可女士</span><span>求购100-150㎡</span><span>两室</span></div>
+                            <div class="ir2 ask-to-buy"><h3>13300817769</h3></div>
+                            <!--<div class="ir3 ir"><span>祥店</span><span>国贸阳光</span></div>-->
+                            <div class="ir4 hopeAdd"><span class="add">五缘湾</span><span class="add">国贸蓝海</span> <span class="sourceR">600-700万</span></div>
+                        </div>
+                    </div>
+                    <div class="im-housedetail" onclick="openWin('sourceDetail')">
+                        <div class="imhousedetail-left im">
+                            <img src="../image/no-pic.png" alt="" style="width: 100%;">
+                        </div>
+                        <div class="imhousedetail-right im ">
+                            <div class="askToBuyInfos"><span>陆可女士</span><span>求购100-150㎡</span><span>两室</span></div>
+                            <div class="ir2 ask-to-buy"><h3>13300817769</h3></div>
+                            <!--<div class="ir3 ir"><span>祥店</span><span>国贸阳光</span></div>-->
+                            <div class="ir4 hopeAdd"><span class="add">五缘湾</span><span class="add">国贸蓝海</span> <span class="sourceR">600-700万</span></div>
+                        </div>
+                    </div>
+                    <div class="im-housedetail" onclick="openWin('sourceDetail')">
+                        <div class="imhousedetail-left im">
+                            <img src="../image/no-pic.png" alt="" style="width: 100%;">
+                        </div>
+                        <div class="imhousedetail-right im ">
+                            <div class="askToBuyInfos"><span>陆可女士</span><span>求购100-150㎡</span><span>两室</span></div>
+                            <div class="ir2 ask-to-buy"><h3>13300817769</h3></div>
+                            <!--<div class="ir3 ir"><span>祥店</span><span>国贸阳光</span></div>-->
+                            <div class="ir4 hopeAdd"><span class="add">五缘湾</span><span class="add">国贸蓝海</span> <span class="sourceR">600-700万</span></div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="item2mobile" class="mui-slider-item mui-control-content">
+        <div id="scroll2" class="mui-scroll-wrapper">
+            <div class="mui-scroll">
+                <div class="">
+
+                    <div style="height: 120px;"></div>
+                    <div class="im-housedetail" onclick="openWin('sourceDetail')">
+                        <div class="imhousedetail-left im">
+                            <img src="../image/no-pic.png" alt="" style="width: 100%;">
+                        </div>
+                        <div class="imhousedetail-right im ">
+                            <div class="askToBuyInfos"><span>陆可女士</span><span>求购100-150㎡</span><span>两室</span></div>
+                            <div class="ir2 ask-to-buy"><h3>13300817769</h3></div>
+                            <div class="ir4 hopeAdd"><span class="add">五缘湾</span><span class="add">国贸蓝海</span> <span class="sourceR">2000-3000元</span></div>
+                        </div>
+                    </div>
+                    <div class="im-housedetail" onclick="openWin('sourceDetail')">
+                        <div class="imhousedetail-left im">
+                            <img src="../image/no-pic.png" alt="" style="width: 100%;">
+                        </div>
+                        <div class="imhousedetail-right im ">
+                            <div class="askToBuyInfos"><span>陆可女士</span><span>求购100-150㎡</span><span>两室</span></div>
+                            <div class="ir2 ask-to-buy"><h3>13300817769</h3></div>
+                            <div class="ir4 hopeAdd"><span class="add">五缘湾</span><span class="add">国贸蓝海</span> <span class="sourceR">2000-3000元</span></div>
+                        </div>
+                    </div>
+                    <div class="im-housedetail" onclick="openWin('sourceDetail')">
+                        <div class="imhousedetail-left im">
+                            <img src="../image/no-pic.png" alt="" style="width: 100%;">
+                        </div>
+                        <div class="imhousedetail-right im ">
+                            <div class="askToBuyInfos"><span>陆可女士</span><span>求购100-150㎡</span><span>两室</span></div>
+                            <div class="ir2 ask-to-buy"><h3>13300817769</h3></div>
+                            <div class="ir4 hopeAdd"><span class="add">五缘湾</span><span class="add">国贸蓝海</span> <span class="sourceR">2000-3000元</span></div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--选择出售类型-->
+<div id="choosehousestyle" class="mui-popover mui-popover-bottom mui-popover-action ">
+    <ul class="mui-table-view">
+        <li class="mui-table-view-cell" style="border-radius: 10px;">
+            <a href="#">选择房源类型</a>
+        </li>
+        <li class="mui-table-view-cell" style="border-radius: 5px;">
+            <a href="#">出售住宅</a>
+        </li>
+        <li class="mui-table-view-cell" style="border-radius: 5px;">
+            <a href="#">出售商铺</a>
+        </li>
+        <li class="mui-table-view-cell" style="border-radius: 5px;">
+            <a href="#">出售写字楼</a>
+        </li>
+        <li class="mui-table-view-cell" style="border-radius: 5px;">
+            <a href="#">出售厂房</a>
+        </li>
+        <li class="mui-table-view-cell" style="border-radius: 5px;">
+            <a href="#">出售地皮</a>
+        </li>
+        <li class="mui-table-view-cell" style="border-radius: 5px;">
+            <a href="#">出售车位</a>
+        </li>
+        <li class="mui-table-view-cell" style="border-radius: 5px;">
+            <a href="#">出售其他</a>
+        </li>
+    </ul>
+    <ul class="mui-table-view">
+        <li class="mui-table-view-cell">
+            <a href="#sheet1"><b>取消</b></a>
+        </li>
+    </ul>
+</div>
+
+<div class="positionadd chooseAdd">
+    <div class="positionMiddle">
+        <div class="positionadd1"  style="width: 50%" id="filter1" >
+            <div class="firstFilter posAdd">
+                <span class="p">全城</span>
+            </div>
+            <div class="firstFilter posAdd">
+                <span class="p">附近</span>
+            </div>
+            <div class="firstFilter posAdd">
+                <span class="p">思明</span>
+            </div>
+            <div class="firstFilter posAdd">
+                <span class="p">湖里</span>
+            </div>
+            <div class="firstFilter posAdd">
+                <span class="p">翔安</span>
+            </div>
+            <div class="firstFilter posAdd">
+                <span class="p">集美</span>
+            </div>
+            <div class="firstFilter posAdd">
+                <span class="p">海沧</span>
+            </div>
+            <div class="firstFilter posAdd">
+                <span class="p">同安</span>
+            </div>
+        </div>
+        <div style="width: 1px;height: 200px;background-color: rgb(233,233,233);position: absolute;left: 50%;top: 0;z-index: 999"></div>
+        <div class="positionadd1"  style="width: 50%" id="filter3">
+            <div class="firstFilter posAdd">
+                中国
+            </div>
+        </div>
+    </div>
+</div>
+<div class="positionadd chooseStyle">
+    <div class="positionMiddle">
+        <div class="positionadd1"  style="width: 100%;height: 260px;" id="filter2" >
+            <div class="firstFilter posAdd">
+                <span class="p">住宅</span>
+            </div>
+            <div class="firstFilter posAdd">
+                <span class="p">别墅</span>
+            </div>
+            <div class="firstFilter posAdd">
+                <span class="p">商铺</span>
+            </div>
+            <div class="firstFilter posAdd">
+                <span class="p">写字楼</span>
+            </div>
+            <div class="firstFilter posAdd">
+                <span class="p">厂房</span>
+            </div>
+            <div class="firstFilter posAdd">
+                <span class="p">仓库</span>
+            </div>
+            <div class="firstFilter posAdd">
+                <span class="p">地皮</span>
+            </div>
+            <div class="firstFilter posAdd">
+                <span class="p">其他</span>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="positionadd choosePrice">
+    <div class="positionMiddle">
+        <div class="positionadd1"  style="width: 100%;height: 220px;" id="filter2" >
+            <div class="firstFilter posAdd">
+                <span class="p">不限</span>
+            </div>
+            <div class="firstFilter posAdd">
+                <span class="p">300-500万</span>
+            </div>
+            <div class="firstFilter posAdd">
+                <span class="p">500-800万</span>
+            </div>
+            <div class="firstFilter posAdd">
+                <span class="p">800-1000万</span>
+            </div>
+            <div class="firstFilter posAdd">
+                <span class="p">1000万以上</span>
+            </div>
+            <div class="firstFilter posAdd">
+                <span class="p">自定义价格</span>
+                <input type="text" style="width: 20%;height: 30px;margin: 5px 0;" placeholder="最小">&mdash;&mdash;
+                <input type="text" style="width: 20%;height: 30px;margin: 5px 0;" placeholder="最大">
+            </div>
+        </div>
+    </div>
+</div>
+<div class="positionadd chooseHouse">
+    <div class="positionMiddle">
+        <div class="positionadd1"  style="width: 100%;height: 260px;" id="filter2" >
+            <div class="firstFilter posAdd">
+                <span class="p">不限</span>
+            </div>
+            <div class="firstFilter posAdd">
+                <span class="p">1室</span>
+            </div>
+            <div class="firstFilter posAdd">
+                <span class="p">2室</span>
+            </div>
+            <div class="firstFilter posAdd">
+                <span class="p">3室</span>
+            </div>
+            <div class="firstFilter posAdd">
+                <span class="p">4室</span>
+            </div>
+            <div class="firstFilter posAdd">
+                <span class="p">5室</span>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="positionadd chooseMore">
+    <div class="positionMiddle">
+        <span class="selectmid">
+            <div class=" choosemore sx">
+            <div class="cc">朝向</div>
+            <div class="k" style="text-align: center">
+                <div class=" cmspan" onclick="changeColor()" id="cmspan">南</div>
+                <div class=" cmspan">南北</div>
+                <div class=" cmspan">东</div>
+                <div class=" cmspan">西</div>
+                <div class=" cmspan">北</div>
+            </div>
+        </div>
+            <div class=" choosemore sx">
+                <div class="cc">面积（平米）</div>
+                <div class="k" style="text-align: center">
+                    <div class=" cmspan">50以下</div>
+                    <div class=" cmspan">50-70</div>
+                    <div class=" cmspan">70-90</div>
+                    <div class=" cmspan">90-110</div>
+                    <div class=" cmspan">110-130</div>
+                    <div class=" cmspan">130-150</div>
+                    <div class=" cmspan">150-200</div>
+                    <div class=" cmspan">200以上</div>
+                </div>
+            </div>
+            <div class=" choosemore xx">
+                <div class="cc">装修</div>
+                <div class="k" style="text-align: center">
+                    <div class=" cmspan">精装修</div>
+                    <div class=" cmspan">普通装修</div>
+                    <div class=" cmspan">毛胚</div>
+                </div>
+            </div>
+            <div class=" choosemore xx">
+                    <div class="cc">楼层</div>
+                    <div class="k" style="text-align: center">
+                        <div class=" cmspan">1-10层</div>
+                        <div class=" cmspan">10-20层</div>
+                        <div class=" cmspan">20-30层</div>
+                        <div class=" cmspan tdl">30层以上</div>
+                    </div>
+                </div>
+            <div class=" choosemore xx">
+                <div class="cc">看房</div>
+                <div class="k" style="text-align: center">
+                    <div class=" cmspan">预约</div>
+                    <div class=" cmspan">有匙</div>
+                    <div class=" cmspan">无匙</div>
+                    <div class=" cmspan">直接</div>
+                </div>
+            </div>
+            <div class=" choosemore xx">
+            <div class="cc">产权</div>
+            <div class="k" style="text-align: center">
+                <div class=" cmspan">产权</div>
+                <div class=" cmspan">协议</div>
+                <div class=" cmspan">合同</div>
+                <div class=" cmspan">双证</div>
+            </div>
+        </div>
+            <div style="height: 150px"></div>
+        </span>
+        <span class="selectfix">
+            <div class=" choosemore qc" style="text-align: center;">
+                清除筛选条件
+            </div>
+            <div class=" choosemore sure" style="text-align: center;">
+                <button style="background-color: #26A69A;width: 100%;padding: 15px;">确定</button>
+            </div>
+        </span>
+    </div>
+</div>
+<div class="hidshow" onclick="chooseAdd();"></div>
+
+<script src="../script/jquery-1.8.2.min.js"></script>
+<script src="../script/angular.js"></script>
+<script src="../script/api.js"></script>
+<script src="../script/tool.js"></script>
+<script src="../script/fastclick.js"></script>
+<script src="../js/MUI/mui.min.js"></script>
+<script src="../js/InventoryManagement.js"></script>
+<script>
+    mui.init({
+        swipeBack: false
+    });
+    (function($) {
+        $('.mui-scroll-wrapper').scroll({
+            indicators: true //是否显示滚动条
+        });
+
+        var html2 = '<ul class="mui-table-view"><li class="mui-table-view-cell">第二个选项卡子项-1</li>';
+        var item2 = document.getElementById('item2mobile');
+        document.getElementById('slider').addEventListener('slide', function(e) {
+            if (e.detail.slideNumber === 1) {
+                if (item2.querySelector('.mui-loading')) {
+                    setTimeout(function() {
+                        item2.querySelector('.mui-scroll').innerHTML = html2;
+                    }, 200);
+                }
+            }
+        });
+    })(mui);
+</script>
+</body>
+</html>

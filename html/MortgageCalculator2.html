@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="telephone=no" name="format-detection">
+    <meta content="email=no" name="format-detection">
+    <title>房贷计算器-组合贷款</title>
+    <link rel="stylesheet" href="../css/ceshi.css">
+</head>
+<body>
+<div id="top" style="background-color: white">
+    <div id="top1" onclick="goBack()">
+        <img src="../image/left.png" alt="">
+    </div>
+    <div id="top2" style="font-size: 14px;margin-top: 5px">
+        <h3><span class="cal">商业贷款</span><span class="cal">公积金贷款</span><span class="cal">组合贷款</span></h3>
+    </div>
+    <div id="top3" class="tianjiaicon" onclick="openWin('')">
+        <!--<img src="../image/+icon.png" alt="">-->
+    </div>
+</div>
+<div class="calculator" style="margin-top: 50px">
+    <div class="calcu"><span class="be-in si">商业贷款：</span><span class="span-input si"><input type="text" placeholder="150万元"></span></div>
+    <div class="calcu"><span class="be-in si">公积金贷款：</span><span class="span-input si"><input type="text" placeholder="100万元"></span></div>
+    <div class="calcu"><span class="be-in si">贷款年限：</span><span class="span-input si"><input type="text" placeholder="30年"></span></div>
+    <div class="calcu"><span class="be-in si">贷款方式：</span><span class="span-input si"><input type="text" placeholder="等额本息"></span></div>
+    <div class="calcu">
+        <span class="be-in si">利率：</span><span class="span-input si"><input type="text" placeholder="商业贷款基准利率4.9%"></span>
+        <span class="be-in si"></span><span class="span-input si"><input type="text" placeholder="公积金贷款利率4.9%"></span>
+    </div>
+    <div class="calcu"><span class="total">计算</span></div>
+    <div style="height: 20px;background-color: #F2F2F2"></div>
+    <div class="shoucal">
+        <span class="be-in mortgage">
+            贷款总额
+            <h3>3141357.50元</h3>
+        </span>
+        <span class="be-in mortgage">
+            支付利息
+            <h3>1141357.50元</h3>
+        </span>
+    </div>
+    <div class="shoucal">
+        <span class="be-in mortgage averagemonth">
+            月均还款
+            <h3>3141357.50元</h3>
+        </span>
+    </div>
+</div>
+<script src="../script/jquery-1.8.2.min.js"></script>
+<script src="../script/angular.js"></script>
+<script src="../script/anotherPage.js"></script>
+<script src="../script/api.js"></script>
+<script src="../script/tool.js"></script>
+<script src="../script/fastclick.js"></script>
+</body>
+</html>

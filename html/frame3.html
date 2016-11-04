@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+    <title>我的</title>
+    <link rel="stylesheet" type="text/css" href="../css/api.css" />
+    <link rel="stylesheet" type="text/css" href="../css/tabs.css" />
+    <link rel="stylesheet" type="text/css" href="../css/style.css" />
+    <link rel="stylesheet" href="../js/lib/layer/layer.css">
+
+</head>
+<body id="frame3">
+
+    <div class="mePage">
+        <div class="header-banner">
+            <div class="header">
+                <span class="ion-gear-a"></span>
+            </div>
+            <img src="../image/img/me-banner.png" alt="">
+            <div class="user-info honluk_row">
+                <div class="left-text">
+                    <div class="name">
+                        <span class="big">陈凯歌</span>
+                        <span class="small">经纪人</span>
+
+                    </div>
+                    <div class="address">观音山</div>
+                    <div class="company">厦门房鹰科技有限公司</div>
+                </div>
+                <div class="right-img">
+                    <img src="../image/img/header.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="me-content">
+            <div class="me-list">
+                <div onclick="openWin('share')">
+                    推荐分享
+                    <i class="ion-ios-arrow-right"></i>
+                </div>
+            </div>
+            <div class="me-list">
+                <div onclick="openWin('tellus')">
+                    意见反馈
+                    <i class="ion-ios-arrow-right"></i>
+                </div>
+
+            </div>
+            <div class="me-list">
+                <div onclick="openWin('aboutus')">
+                    关于我们
+                    <i class="ion-ios-arrow-right"></i>
+                </div>
+
+            </div>
+        </div>
+        <div class="logout">
+            <div @click="logOut">
+                退出登录
+                <i class="ion-ios-arrow-right"></i>
+            </div>
+
+        </div>
+    </div>
+    <div style="position: fixed;top: 30px;right: 20px;display: inline-block;width: 60px;height: 25px;">
+        <span onclick="openWin('infos')">
+            <img src="../image/infos.png" alt="" style="width: 20px;height: 20px;">
+        </span>
+        <span style="display: inline-block;float: right;" onclick="openWin('setting')">
+            <img src="../image/set2.png" alt="" style="width: 20px;height: 20px;">
+        </span>
+    </div>
+    <script src="../script/jquery-1.8.2.min.js"></script>
+    <script src="../js/lib/Vue/vue.js"></script>
+    <script src="../script/api.js"></script>
+    <script src="../script/tool.js"></script>
+    <script src="../script/fastclick.js"></script>
+    <script src="../js/lib/layer/layer.js"></script>
+    <script>
+        var frame3 = new Vue({
+            el:'#frame3',
+            data:{},
+            methods:{
+                logOut:function(){
+                    layer.msg('是否确认退出？', {
+                        time: 0 //不自动关闭
+                        ,btn: ['确定退出', '我不同意']
+                        ,yes: function(index){
+//                            var succeed = function(){
+//                                alert('成功退出')
+//                            };
+//                            var failed = function(data){
+//                                alert(data);
+//                            };
+//                            var token = {
+//                              token:''
+//                            };
+//                            beginAsyncAjax('/api/user/v1/logOut',token,succeed,failed)
+                            layer.close(index);
+                            openWin('register');
+                        }
+                    });
+                }
+            }
+        })
+    </script>
+</body>
+</html>

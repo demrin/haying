@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="telephone=no" name="format-detection">
+    <meta content="email=no" name="format-detection">
+    <title>个人房源订阅</title>
+    <link rel="stylesheet" href="../css/ceshi.css">
+    <link rel="stylesheet" href="../css/mui.min.css">
+</head>
+<body>
+    <div id="top">
+        <div id="top1" onclick="goBack()" style="top: -3px;">
+            <img src="../image/left.png" alt="">
+        </div>
+        <div id="top2" style="top: 32px;">
+            <h3 style="font-size: 18px">个人房源订阅</h3>
+        </div>
+        <div id="top3" onclick="goAnotherPage('subscriSetting')">
+            <img src="../image/set.png" style="width: 23px;height: 23px;top: 2px;position: relative">
+        </div>
+    </div>
+
+    <div class="mui-content">
+        <div id="slider" class="mui-slider tabTop" style="">
+            <div id="sliderSegmentedControl" class="housesubscr mui-slider-indicator mui-segmented-control mui-segmented-control-inverted">
+                <a class="mui-control-item" href="#item1mobile">出售</a>
+                <a class="mui-control-item" href="#item2mobile">出租</a>
+                <a class="mui-control-item" href="#item3mobile">求租</a>
+                <a class="mui-control-item" href="#item4mobile">求购</a>
+            </div>
+            <div id="sliderProgressBar" class="mui-slider-progress-bar mui-col-xs-3"></div>
+            <div class="mui-slider-group" style="margin-top: 115px">
+                <div id="item1mobile" class="mui-slider-item mui-control-content mui-active">
+                    <div id="scroll1" class="mui-scroll-wrapper">
+                        <div class="mui-scroll">
+                            <div class="houseScriptions" style="position: relative;top: -45px;">
+                                <ul class="ng-click">
+                                    <li class="houseScription" onclick="openWin('houseHeadline')">
+                                        <div class="houseScription-left">
+                                            <img src="../image/newpic.png" alt="">
+                                        </div>
+                                        <div class="houseScription-right">
+                                            <article class="jieshao">国贸阳光经典户型,中庭...</article>
+                                            <article class="any"><span>四室二厅</span><span>168m²</span></article>
+                                            <article class="any"><span>五缘湾</span>- <span>国贸蓝海</span></article>
+                                            <article class="n-p">
+                                                <span class="newadd">网易新闻</span>
+                                                <span class="newprice">760万</span>
+                                            </article>
+                                        </div>
+                                    </li>
+                                    <li class="houseScription" onclick="goAnotherPage('houseHeadline')">
+                                        <div class="houseScription-left">
+                                            <img src="../image/newpic.png" alt="">
+                                        </div>
+                                        <div class="houseScription-right">
+                                            <article class="jieshao">国贸阳光经典户型,中庭...</article>
+                                            <article class="any"><span>四室二厅</span><span>168m²</span></article>
+                                            <article class="any"><span>五缘湾</span>- <span>国贸蓝海</span></article>
+                                            <article class="n-p">
+                                                <span class="newadd">网易新闻</span>
+                                                <span class="newprice">760万</span>
+                                            </article>
+                                        </div>
+                                    </li>
+                                    <li class="houseScription" onclick="goAnotherPage('houseHeadline')">
+                                        <div class="houseScription-left">
+                                            <img src="../image/newpic.png" alt="">
+                                        </div>
+                                        <div class="houseScription-right">
+                                            <article class="jieshao">国贸阳光经典户型,中庭...</article>
+                                            <article class="any"><span>四室二厅</span><span>168m²</span></article>
+                                            <article class="any"><span>五缘湾</span>- <span>国贸蓝海</span></article>
+                                            <article class="n-p">
+                                                <span class="newadd">网易新闻</span>
+                                                <span class="newprice">760万</span>
+                                            </article>
+                                        </div>
+                                    </li>
+                                    <li class="houseScription" onclick="goAnotherPage('houseHeadline')">
+                                        <div class="houseScription-left">
+                                            <img src="../image/newpic.png" alt="">
+                                        </div>
+                                        <div class="houseScription-right">
+                                            <article class="jieshao">国贸阳光经典户型,中庭...</article>
+                                            <article class="any"><span>四室二厅</span><span>168m²</span></article>
+                                            <article class="any"><span>五缘湾</span>- <span>国贸蓝海</span></article>
+                                            <article class="n-p">
+                                                <span class="newadd">网易新闻</span>
+                                                <span class="newprice">760万</span>
+                                            </article>
+                                        </div>
+                                    </li>
+                                    <li class="houseScription" onclick="goAnotherPage('houseHeadline')">
+                                        <div class="houseScription-left">
+                                            <img src="../image/newpic.png" alt="">
+                                        </div>
+                                        <div class="houseScription-right">
+                                            <article class="jieshao">国贸阳光经典户型,中庭...</article>
+                                            <article class="any"><span>四室二厅</span><span>168m²</span></article>
+                                            <article class="any"><span>五缘湾</span>- <span>国贸蓝海</span></article>
+                                            <article class="n-p">
+                                                <span class="newadd">网易新闻</span>
+                                                <span class="newprice">760万</span>
+                                            </article>
+                                        </div>
+                                    </li>
+                                    <li class="houseScription" onclick="goAnotherPage('houseHeadline')">
+                                        <div class="houseScription-left">
+                                            <img src="../image/newpic.png" alt="">
+                                        </div>
+                                        <div class="houseScription-right">
+                                            <article class="jieshao">国贸阳光经典户型,中庭...</article>
+                                            <article class="any"><span>四室二厅</span><span>168m²</span></article>
+                                            <article class="any"><span>五缘湾</span>- <span>国贸蓝海</span></article>
+                                            <article class="n-p">
+                                                <span class="newadd">网易新闻</span>
+                                                <span class="newprice">760万</span>
+                                            </article>
+                                        </div>
+                                    </li>
+                                    <li class="houseScription" onclick="goAnotherPage('houseHeadline')">
+                                        <div class="houseScription-left">
+                                            <img src="../image/newpic.png" alt="">
+                                        </div>
+                                        <div class="houseScription-right">
+                                            <article class="jieshao">国贸阳光经典户型,中庭...</article>
+                                            <article class="any"><span>四室二厅</span><span>168m²</span></article>
+                                            <article class="any"><span>五缘湾</span>- <span>国贸蓝海</span></article>
+                                            <article class="n-p">
+                                                <span class="newadd">网易新闻</span>
+                                                <span class="newprice">760万</span>
+                                            </article>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="item2mobile" class="mui-slider-item mui-control-content">
+                    <div id="scroll2" class="mui-scroll-wrapper">
+                        <div class="mui-scroll">
+                            <div class="mui-scroll">
+                                <div class="houseScriptions" style="position: relative;top: -45px;">
+                                    <ul class="ng-click hsu">
+                                        <li class="houseScription" onclick="openWin('houseHeadline')">
+                                            <div class="houseScription-left">
+                                                <img src="../image/newpic.png" alt="">
+                                            </div>
+                                            <div class="houseScription-right">
+                                                <article class="jieshao">国贸阳光经典户型,中庭...</article>
+                                                <article class="any"><span>四室二厅</span><span>168m²</span></article>
+                                                <article class="any"><span>五缘湾</span>- <span>国贸蓝海</span></article>
+                                                <article class="n-p">
+                                                    <span class="newadd">网易新闻</span>
+                                                    <span class="newprice">760万</span>
+                                                </article>
+                                            </div>
+                                        </li>
+                                        <li class="houseScription" onclick="goAnotherPage('houseHeadline')">
+                                            <div class="houseScription-left">
+                                                <img src="../image/newpic.png" alt="">
+                                            </div>
+                                            <div class="houseScription-right">
+                                                <article class="jieshao">国贸阳光经典户型,中庭...</article>
+                                                <article class="any"><span>四室二厅</span><span>168m²</span></article>
+                                                <article class="any"><span>五缘湾</span>- <span>国贸蓝海</span></article>
+                                                <article class="n-p">
+                                                    <span class="newadd">网易新闻</span>
+                                                    <span class="newprice">760万</span>
+                                                </article>
+                                            </div>
+                                        </li>
+                                        <li class="houseScription" onclick="goAnotherPage('houseHeadline')">
+                                            <div class="houseScription-left">
+                                                <img src="../image/newpic.png" alt="">
+                                            </div>
+                                            <div class="houseScription-right">
+                                                <article class="jieshao">国贸阳光经典户型,中庭...</article>
+                                                <article class="any"><span>四室二厅</span><span>168m²</span></article>
+                                                <article class="any"><span>五缘湾</span>- <span>国贸蓝海</span></article>
+                                                <article class="n-p">
+                                                    <span class="newadd">网易新闻</span>
+                                                    <span class="newprice">760万</span>
+                                                </article>
+                                            </div>
+                                        </li>
+                                        <li class="houseScription" onclick="goAnotherPage('houseHeadline')">
+                                            <div class="houseScription-left">
+                                                <img src="../image/newpic.png" alt="">
+                                            </div>
+                                            <div class="houseScription-right">
+                                                <article class="jieshao">国贸阳光经典户型,中庭...</article>
+                                                <article class="any"><span>四室二厅</span><span>168m²</span></article>
+                                                <article class="any"><span>五缘湾</span>- <span>国贸蓝海</span></article>
+                                                <article class="n-p">
+                                                    <span class="newadd">网易新闻</span>
+                                                    <span class="newprice">760万</span>
+                                                </article>
+                                            </div>
+                                        </li>
+                                        <li class="houseScription" onclick="goAnotherPage('houseHeadline')">
+                                            <div class="houseScription-left">
+                                                <img src="../image/newpic.png" alt="">
+                                            </div>
+                                            <div class="houseScription-right">
+                                                <article class="jieshao">国贸阳光经典户型,中庭...</article>
+                                                <article class="any"><span>四室二厅</span><span>168m²</span></article>
+                                                <article class="any"><span>五缘湾</span>- <span>国贸蓝海</span></article>
+                                                <article class="n-p">
+                                                    <span class="newadd">网易新闻</span>
+                                                    <span class="newprice">760万</span>
+                                                </article>
+                                            </div>
+                                        </li>
+                                        <li class="houseScription" onclick="goAnotherPage('houseHeadline')">
+                                            <div class="houseScription-left">
+                                                <img src="../image/newpic.png" alt="">
+                                            </div>
+                                            <div class="houseScription-right">
+                                                <article class="jieshao">国贸阳光经典户型,中庭...</article>
+                                                <article class="any"><span>四室二厅</span><span>168m²</span></article>
+                                                <article class="any"><span>五缘湾</span>- <span>国贸蓝海</span></article>
+                                                <article class="n-p">
+                                                    <span class="newadd">网易新闻</span>
+                                                    <span class="newprice">760万</span>
+                                                </article>
+                                            </div>
+                                        </li>
+                                        <li class="houseScription" onclick="goAnotherPage('houseHeadline')">
+                                            <div class="houseScription-left">
+                                                <img src="../image/newpic.png" alt="">
+                                            </div>
+                                            <div class="houseScription-right">
+                                                <article class="jieshao">国贸阳光经典户型,中庭...</article>
+                                                <article class="any"><span>四室二厅</span><span>168m²</span></article>
+                                                <article class="any"><span>五缘湾</span>- <span>国贸蓝海</span></article>
+                                                <article class="n-p">
+                                                    <span class="newadd">网易新闻</span>
+                                                    <span class="newprice">760万</span>
+                                                </article>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="mui-scroll">
+                                <div class="houseScriptions" style="position: relative;top: -45px;">
+                                    <ul class="ng-click">
+                                        <li class="houseScription" onclick="openWin('houseHeadline')">
+                                            <div class="houseScription-left">
+                                                <img src="../image/newpic.png" alt="">
+                                            </div>
+                                            <div class="houseScription-right">
+                                                <article class="jieshao">国贸阳光经典户型,中庭...</article>
+                                                <article class="any"><span>四室二厅</span><span>168m²</span></article>
+                                                <article class="any"><span>五缘湾</span>- <span>国贸蓝海</span></article>
+                                                <article class="n-p">
+                                                    <span class="newadd">网易新闻</span>
+                                                    <span class="newprice">760万</span>
+                                                </article>
+                                            </div>
+                                        </li>
+                                        <li class="houseScription" onclick="goAnotherPage('houseHeadline')">
+                                            <div class="houseScription-left">
+                                                <img src="../image/newpic.png" alt="">
+                                            </div>
+                                            <div class="houseScription-right">
+                                                <article class="jieshao">国贸阳光经典户型,中庭...</article>
+                                                <article class="any"><span>四室二厅</span><span>168m²</span></article>
+                                                <article class="any"><span>五缘湾</span>- <span>国贸蓝海</span></article>
+                                                <article class="n-p">
+                                                    <span class="newadd">网易新闻</span>
+                                                    <span class="newprice">760万</span>
+                                                </article>
+                                            </div>
+                                        </li>
+                                        <li class="houseScription" onclick="goAnotherPage('houseHeadline')">
+                                            <div class="houseScription-left">
+                                                <img src="../image/newpic.png" alt="">
+                                            </div>
+                                            <div class="houseScription-right">
+                                                <article class="jieshao">国贸阳光经典户型,中庭...</article>
+                                                <article class="any"><span>四室二厅</span><span>168m²</span></article>
+                                                <article class="any"><span>五缘湾</span>- <span>国贸蓝海</span></article>
+                                                <article class="n-p">
+                                                    <span class="newadd">网易新闻</span>
+                                                    <span class="newprice">760万</span>
+                                                </article>
+                                            </div>
+                                        </li>
+                                        <li class="houseScription" onclick="goAnotherPage('houseHeadline')">
+                                            <div class="houseScription-left">
+                                                <img src="../image/newpic.png" alt="">
+                                            </div>
+                                            <div class="houseScription-right">
+                                                <article class="jieshao">国贸阳光经典户型,中庭...</article>
+                                                <article class="any"><span>四室二厅</span><span>168m²</span></article>
+                                                <article class="any"><span>五缘湾</span>- <span>国贸蓝海</span></article>
+                                                <article class="n-p">
+                                                    <span class="newadd">网易新闻</span>
+                                                    <span class="newprice">760万</span>
+                                                </article>
+                                            </div>
+                                        </li>
+                                        <li class="houseScription" onclick="goAnotherPage('houseHeadline')">
+                                            <div class="houseScription-left">
+                                                <img src="../image/newpic.png" alt="">
+                                            </div>
+                                            <div class="houseScription-right">
+                                                <article class="jieshao">国贸阳光经典户型,中庭...</article>
+                                                <article class="any"><span>四室二厅</span><span>168m²</span></article>
+                                                <article class="any"><span>五缘湾</span>- <span>国贸蓝海</span></article>
+                                                <article class="n-p">
+                                                    <span class="newadd">网易新闻</span>
+                                                    <span class="newprice">760万</span>
+                                                </article>
+                                            </div>
+                                        </li>
+                                        <li class="houseScription" onclick="goAnotherPage('houseHeadline')">
+                                            <div class="houseScription-left">
+                                                <img src="../image/newpic.png" alt="">
+                                            </div>
+                                            <div class="houseScription-right">
+                                                <article class="jieshao">国贸阳光经典户型,中庭...</article>
+                                                <article class="any"><span>四室二厅</span><span>168m²</span></article>
+                                                <article class="any"><span>五缘湾</span>- <span>国贸蓝海</span></article>
+                                                <article class="n-p">
+                                                    <span class="newadd">网易新闻</span>
+                                                    <span class="newprice">760万</span>
+                                                </article>
+                                            </div>
+                                        </li>
+                                        <li class="houseScription" onclick="goAnotherPage('houseHeadline')">
+                                            <div class="houseScription-left">
+                                                <img src="../image/newpic.png" alt="">
+                                            </div>
+                                            <div class="houseScription-right">
+                                                <article class="jieshao">国贸阳光经典户型,中庭...</article>
+                                                <article class="any"><span>四室二厅</span><span>168m²</span></article>
+                                                <article class="any"><span>五缘湾</span>- <span>国贸蓝海</span></article>
+                                                <article class="n-p">
+                                                    <span class="newadd">网易新闻</span>
+                                                    <span class="newprice">760万</span>
+                                                </article>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="mui-scroll">
+                                <div class="houseScriptions" style="position: relative;top: -45px;">
+                                    <ul class="ng-click">
+                                        <li class="houseScription" onclick="openWin('houseHeadline')">
+                                            <div class="houseScription-left">
+                                                <img src="../image/newpic.png" alt="">
+                                            </div>
+                                            <div class="houseScription-right">
+                                                <article class="jieshao">国贸阳光经典户型,中庭...</article>
+                                                <article class="any"><span>四室二厅</span><span>168m²</span></article>
+                                                <article class="any"><span>五缘湾</span>- <span>国贸蓝海</span></article>
+                                                <article class="n-p">
+                                                    <span class="newadd">网易新闻</span>
+                                                    <span class="newprice">760万</span>
+                                                </article>
+                                            </div>
+                                        </li>
+                                        <li class="houseScription" onclick="goAnotherPage('houseHeadline')">
+                                            <div class="houseScription-left">
+                                                <img src="../image/newpic.png" alt="">
+                                            </div>
+                                            <div class="houseScription-right">
+                                                <article class="jieshao">国贸阳光经典户型,中庭...</article>
+                                                <article class="any"><span>四室二厅</span><span>168m²</span></article>
+                                                <article class="any"><span>五缘湾</span>- <span>国贸蓝海</span></article>
+                                                <article class="n-p">
+                                                    <span class="newadd">网易新闻</span>
+                                                    <span class="newprice">760万</span>
+                                                </article>
+                                            </div>
+                                        </li>
+                                        <li class="houseScription" onclick="goAnotherPage('houseHeadline')">
+                                            <div class="houseScription-left">
+                                                <img src="../image/newpic.png" alt="">
+                                            </div>
+                                            <div class="houseScription-right">
+                                                <article class="jieshao">国贸阳光经典户型,中庭...</article>
+                                                <article class="any"><span>四室二厅</span><span>168m²</span></article>
+                                                <article class="any"><span>五缘湾</span>- <span>国贸蓝海</span></article>
+                                                <article class="n-p">
+                                                    <span class="newadd">网易新闻</span>
+                                                    <span class="newprice">760万</span>
+                                                </article>
+                                            </div>
+                                        </li>
+                                        <li class="houseScription" onclick="goAnotherPage('houseHeadline')">
+                                            <div class="houseScription-left">
+                                                <img src="../image/newpic.png" alt="">
+                                            </div>
+                                            <div class="houseScription-right">
+                                                <article class="jieshao">国贸阳光经典户型,中庭...</article>
+                                                <article class="any"><span>四室二厅</span><span>168m²</span></article>
+                                                <article class="any"><span>五缘湾</span>- <span>国贸蓝海</span></article>
+                                                <article class="n-p">
+                                                    <span class="newadd">网易新闻</span>
+                                                    <span class="newprice">760万</span>
+                                                </article>
+                                            </div>
+                                        </li>
+                                        <li class="houseScription" onclick="goAnotherPage('houseHeadline')">
+                                            <div class="houseScription-left">
+                                                <img src="../image/newpic.png" alt="">
+                                            </div>
+                                            <div class="houseScription-right">
+                                                <article class="jieshao">国贸阳光经典户型,中庭...</article>
+                                                <article class="any"><span>四室二厅</span><span>168m²</span></article>
+                                                <article class="any"><span>五缘湾</span>- <span>国贸蓝海</span></article>
+                                                <article class="n-p">
+                                                    <span class="newadd">网易新闻</span>
+                                                    <span class="newprice">760万</span>
+                                                </article>
+                                            </div>
+                                        </li>
+                                        <li class="houseScription" onclick="goAnotherPage('houseHeadline')">
+                                            <div class="houseScription-left">
+                                                <img src="../image/newpic.png" alt="">
+                                            </div>
+                                            <div class="houseScription-right">
+                                                <article class="jieshao">国贸阳光经典户型,中庭...</article>
+                                                <article class="any"><span>四室二厅</span><span>168m²</span></article>
+                                                <article class="any"><span>五缘湾</span>- <span>国贸蓝海</span></article>
+                                                <article class="n-p">
+                                                    <span class="newadd">网易新闻</span>
+                                                    <span class="newprice">760万</span>
+                                                </article>
+                                            </div>
+                                        </li>
+                                        <li class="houseScription" onclick="goAnotherPage('houseHeadline')">
+                                            <div class="houseScription-left">
+                                                <img src="../image/newpic.png" alt="">
+                                            </div>
+                                            <div class="houseScription-right">
+                                                <article class="jieshao">国贸阳光经典户型,中庭...</article>
+                                                <article class="any"><span>四室二厅</span><span>168m²</span></article>
+                                                <article class="any"><span>五缘湾</span>- <span>国贸蓝海</span></article>
+                                                <article class="n-p">
+                                                    <span class="newadd">网易新闻</span>
+                                                    <span class="newprice">760万</span>
+                                                </article>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="item3mobile" class="mui-slider-item mui-control-content">
+                    <div id="scroll3" class="mui-scroll-wrapper">
+                        <div class="mui-scroll">
+                            <div>
+                                <div class="detailinfo">
+                                    <div class="intention aa">求购国贸蓝海3房精装修</div>
+                                    <div class="aa"><span>3室2厅</span><span>157.09㎡</span></div>
+                                    <div class="aa ad"><span>五缘湾-国贸蓝海</span></div>
+                                    <div class="aa">
+                                        <div class="newspaper ad"><span>厦门联合网</span><span>3小时前</span></div>
+                                        <span class="ps">700万</span>
+                                    </div>
+                                </div>
+                                <div class="detailinfo">
+                                    <div class="intention aa">求购国贸蓝海3房精装修</div>
+                                    <div class="aa"><span>3室2厅</span><span>157.09㎡</span></div>
+                                    <div class="aa ad"><span>五缘湾-国贸蓝海</span></div>
+                                    <div class="aa">
+                                        <div class="newspaper ad"><span>厦门联合网</span><span>3小时前</span></div>
+                                        <span class="ps">700万</span>
+                                    </div>
+                                </div>
+                                <div class="detailinfo">
+                                    <div class="intention aa">求购国贸蓝海3房精装修</div>
+                                    <div class="aa"><span>3室2厅</span><span>157.09㎡</span></div>
+                                    <div class="aa ad"><span>五缘湾-国贸蓝海</span></div>
+                                    <div class="aa">
+                                        <div class="newspaper ad"><span>厦门联合网</span><span>3小时前</span></div>
+                                        <span class="ps">700万</span>
+                                    </div>
+                                </div>
+                                <div class="detailinfo">
+                                    <div class="intention aa">求购国贸蓝海3房精装修</div>
+                                    <div class="aa"><span>3室2厅</span><span>157.09㎡</span></div>
+                                    <div class="aa ad"><span>五缘湾-国贸蓝海</span></div>
+                                    <div class="aa">
+                                        <div class="newspaper ad"><span>厦门联合网</span><span>3小时前</span></div>
+                                        <span class="ps">700万</span>
+                                    </div>
+                                </div>
+                                <div class="detailinfo">
+                                    <div class="intention aa">求购国贸蓝海3房精装修</div>
+                                    <div class="aa"><span>3室2厅</span><span>157.09㎡</span></div>
+                                    <div class="aa ad"><span>五缘湾-国贸蓝海</span></div>
+                                    <div class="aa">
+                                        <div class="newspaper ad"><span>厦门联合网</span><span>3小时前</span></div>
+                                        <span class="ps">700万</span>
+                                    </div>
+                                </div>
+                                <div class="detailinfo">
+                                    <div class="intention aa">求购国贸蓝海3房精装修</div>
+                                    <div class="aa"><span>3室2厅</span><span>157.09㎡</span></div>
+                                    <div class="aa ad"><span>五缘湾-国贸蓝海</span></div>
+                                    <div class="aa">
+                                        <div class="newspaper ad"><span>厦门联合网</span><span>3小时前</span></div>
+                                        <span class="ps">700万</span>
+                                    </div>
+                                </div>
+                                <div class="detailinfo">
+                                    <div class="intention aa">求购国贸蓝海3房精装修</div>
+                                    <div class="aa"><span>3室2厅</span><span>157.09㎡</span></div>
+                                    <div class="aa ad"><span>五缘湾-国贸蓝海</span></div>
+                                    <div class="aa">
+                                        <div class="newspaper ad"><span>厦门联合网</span><span>3小时前</span></div>
+                                        <span class="ps">700万</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="item4mobile" class="mui-slider-item mui-control-content">
+                    <div id="scroll4" class="mui-scroll-wrapper">
+                        <div class="mui-scroll">
+                            <div class="mui-scroll">
+                                <div class="houseScriptions" style="position: relative;top: -45px;">
+                                    <ul class="ng-click">
+                                        <li class="houseScription" onclick="openWin('houseHeadline')">
+                                            <div class="houseScription-left">
+                                                <img src="../image/newpic.png" alt="">
+                                            </div>
+                                            <div class="houseScription-right">
+                                                <article class="jieshao">国贸阳光经典户型,中庭...</article>
+                                                <article class="any"><span>四室二厅</span><span>168m²</span></article>
+                                                <article class="any"><span>五缘湾</span>- <span>国贸蓝海</span></article>
+                                                <article class="n-p">
+                                                    <span class="newadd">网易新闻</span>
+                                                    <span class="newprice">760万</span>
+                                                </article>
+                                            </div>
+                                        </li>
+                                        <li class="houseScription" onclick="goAnotherPage('houseHeadline')">
+                                            <div class="houseScription-left">
+                                                <img src="../image/newpic.png" alt="">
+                                            </div>
+                                            <div class="houseScription-right">
+                                                <article class="jieshao">国贸阳光经典户型,中庭...</article>
+                                                <article class="any"><span>四室二厅</span><span>168m²</span></article>
+                                                <article class="any"><span>五缘湾</span>- <span>国贸蓝海</span></article>
+                                                <article class="n-p">
+                                                    <span class="newadd">网易新闻</span>
+                                                    <span class="newprice">760万</span>
+                                                </article>
+                                            </div>
+                                        </li>
+                                        <li class="houseScription" onclick="goAnotherPage('houseHeadline')">
+                                            <div class="houseScription-left">
+                                                <img src="../image/newpic.png" alt="">
+                                            </div>
+                                            <div class="houseScription-right">
+                                                <article class="jieshao">国贸阳光经典户型,中庭...</article>
+                                                <article class="any"><span>四室二厅</span><span>168m²</span></article>
+                                                <article class="any"><span>五缘湾</span>- <span>国贸蓝海</span></article>
+                                                <article class="n-p">
+                                                    <span class="newadd">网易新闻</span>
+                                                    <span class="newprice">760万</span>
+                                                </article>
+                                            </div>
+                                        </li>
+                                        <li class="houseScription" onclick="goAnotherPage('houseHeadline')">
+                                            <div class="houseScription-left">
+                                                <img src="../image/newpic.png" alt="">
+                                            </div>
+                                            <div class="houseScription-right">
+                                                <article class="jieshao">国贸阳光经典户型,中庭...</article>
+                                                <article class="any"><span>四室二厅</span><span>168m²</span></article>
+                                                <article class="any"><span>五缘湾</span>- <span>国贸蓝海</span></article>
+                                                <article class="n-p">
+                                                    <span class="newadd">网易新闻</span>
+                                                    <span class="newprice">760万</span>
+                                                </article>
+                                            </div>
+                                        </li>
+                                        <li class="houseScription" onclick="goAnotherPage('houseHeadline')">
+                                            <div class="houseScription-left">
+                                                <img src="../image/newpic.png" alt="">
+                                            </div>
+                                            <div class="houseScription-right">
+                                                <article class="jieshao">国贸阳光经典户型,中庭...</article>
+                                                <article class="any"><span>四室二厅</span><span>168m²</span></article>
+                                                <article class="any"><span>五缘湾</span>- <span>国贸蓝海</span></article>
+                                                <article class="n-p">
+                                                    <span class="newadd">网易新闻</span>
+                                                    <span class="newprice">760万</span>
+                                                </article>
+                                            </div>
+                                        </li>
+                                        <li class="houseScription" onclick="goAnotherPage('houseHeadline')">
+                                            <div class="houseScription-left">
+                                                <img src="../image/newpic.png" alt="">
+                                            </div>
+                                            <div class="houseScription-right">
+                                                <article class="jieshao">国贸阳光经典户型,中庭...</article>
+                                                <article class="any"><span>四室二厅</span><span>168m²</span></article>
+                                                <article class="any"><span>五缘湾</span>- <span>国贸蓝海</span></article>
+                                                <article class="n-p">
+                                                    <span class="newadd">网易新闻</span>
+                                                    <span class="newprice">760万</span>
+                                                </article>
+                                            </div>
+                                        </li>
+                                        <li class="houseScription" onclick="goAnotherPage('houseHeadline')">
+                                            <div class="houseScription-left">
+                                                <img src="../image/newpic.png" alt="">
+                                            </div>
+                                            <div class="houseScription-right">
+                                                <article class="jieshao">国贸阳光经典户型,中庭...</article>
+                                                <article class="any"><span>四室二厅</span><span>168m²</span></article>
+                                                <article class="any"><span>五缘湾</span>- <span>国贸蓝海</span></article>
+                                                <article class="n-p">
+                                                    <span class="newadd">网易新闻</span>
+                                                    <span class="newprice">760万</span>
+                                                </article>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../script/jquery-1.8.2.min.js"></script>
+    <script src="../script/angular.js"></script>
+    <script src="../script/api.js"></script>
+    <script src="../script/tool.js"></script>
+    <script src="../script/fastclick.js"></script>
+    <script src="../js/MUI/mui.min.js"></script>
+    <script>
+        mui.init({
+            swipeBack: false
+        });
+        (function($) {
+            $('.mui-scroll-wrapper').scroll({
+                indicators: true //是否显示滚动条
+            });
+
+            <!--根据选择获取各个面板 -->
+
+            var html2 = '<ul class="mui-table-view"><li class="mui-table-view-cell">第二个选项卡子项-1</li><li class="mui-table-view-cell">第二个选项卡子项-2</li><li class="mui-table-view-cell">第二个选项卡子项-3</li><li class="mui-table-view-cell">第二个选项卡子项-4</li><li class="mui-table-view-cell">第二个选项卡子项-5</li></ul>';
+//            var html3 = '<div style="height: 30px;"></div>'
+//                        +'<div class="detailinfo">'
+//                            +'<div class="intention aa">求购国贸蓝海3房精装修</div>'
+//                            +'<div class="aa"><span>3室2厅</span><span>157.09㎡</span></div>'
+//                            +'<div class="aa ad"><span>五缘湾-国贸蓝海</span></div>'
+//                            +'<div class="aa">'
+//                            +'    <div class="newspaper ad"><span>厦门联合网</span><span>3小时前</span></div>'
+//                            +'    <span class="ps">700万</span>'
+//                            +'</div>'
+//                        +'</div>';
+            var html4 = '<ul class="mui-table-view"><li class="mui-table-view-cell">第4个选项卡子项-1</li><li class="mui-table-view-cell">第4个选项卡子项-2</li><li class="mui-table-view-cell">第三个选项卡子项-3</li><li class="mui-table-view-cell">第三个选项卡子项-4</li><li class="mui-table-view-cell">第三个选项卡子项-5</li></ul>';
+            var item2 = document.getElementById('item2mobile');
+            var item3 = document.getElementById('item3mobile');
+            var item4 = document.getElementById('item4mobile');
+            document.getElementById('slider').addEventListener('slide', function(e) {
+                if (e.detail.slideNumber === 1) {
+                    if (item2.querySelector('.mui-loading')) {
+                        setTimeout(function() {
+                            item2.querySelector('.mui-scroll').innerHTML = html2;
+                        }, 500);
+                    }
+                } else if (e.detail.slideNumber === 2) {
+                    if (item3.querySelector('.mui-loading')) {
+                        setTimeout(function() {
+                            item3.querySelector('.mui-scroll').innerHTML = html3;
+                        }, 500);
+                    }
+                }else if (e.detail.slideNumber === 3) {
+                    if (item4.querySelector('.mui-loading')) {
+                        setTimeout(function() {
+                            item4.querySelector('.mui-scroll').innerHTML = html4;
+                        }, 500);
+                    }
+                }
+            });
+
+        })(mui);
+    </script>
+</body>
+</html>

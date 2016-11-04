@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="telephone=no" name="format-detection">
+    <meta content="email=no" name="format-detection">
+    <title>公司部门</title>
+    <link rel="stylesheet" href="../css/ceshi.css">
+    <link rel="stylesheet" href="../css/font-awesome.min.css">
+</head>
+<body  style="background-color: #F2F2F2">
+<div id="top" style="background-color: rgb(249,249,249)">
+    <div id="top1" onclick="goBackToRef()">
+        <img src="../image/left.png" alt="">
+    </div>
+    <div id="top2">
+        <h3>公司部门</h3>
+    </div>
+    <div id="top3">
+        <!--<h4>查看原文</h4>-->
+    </div>
+</div>
+<div id="department" class="paddingTo">
+    <span class="mailsearch">
+        <!--<i class="ion-search"></i>-->
+        <input type="text" placeholder="搜索" style="width: 90%;">
+    </span>
+
+    <div id="departments">
+        <div class="sectionSelect">
+            <span class="cpc">
+                <img src="../image/cube3.png" alt="">
+            </span>
+            <span class="sectionname">总裁办</span>
+            <span class="departmentnumber">3</span>
+            <span class="right">
+                <img src="../image/right1.png" alt="">
+            </span>
+        </div>
+        <div class="sectionSelect" onclick="openWin('xiaoshoudepartmentMailList')">
+            <span class="cpc">
+                <img src="../image/cube3.png" alt="">
+            </span>
+            <span class="sectionname">销售部</span>
+            <span class="departmentnumber">12</span>
+            <span class="right">
+                <img src="../image/right1.png" alt="">
+            </span>
+        </div>
+        <div class="sectionSelect">
+            <span class="cpc">
+                <img src="../image/cube3.png" alt="">
+            </span>
+            <span class="sectionname">售后部</span>
+            <span class="departmentnumber">5</span>
+            <span class="right">
+                <img src="../image/right1.png" alt="">
+            </span>
+        </div>
+        <div class="sectionSelect">
+            <span class="cpc">
+                <img src="../image/cube3.png" alt="">
+            </span>
+            <span class="sectionname">市场部</span>
+            <span class="departmentnumber">22</span>
+            <span class="right">
+                <img src="../image/right1.png" alt="">
+            </span>
+        </div>
+        <div class="sectionSelect">
+            <span class="cpc">
+                <img src="../image/cube3.png" alt="">
+            </span>
+            <span class="sectionname">后勤部</span>
+            <span class="departmentnumber">6</span>
+            <span class="right">
+                <img src="../image/right1.png" alt="">
+            </span>
+        </div>
+    </div>
+</div>
+<script src="../script/jquery-1.8.2.min.js"></script>
+<script src="../script/angular.js"></script>
+<script src="../script/anotherPage.js"></script>
+<script src="../script/api.js"></script>
+<script src="../script/tool.js"></script>
+<script src="../script/fastclick.js"></script>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+    <title>应用</title>
+    <link rel="stylesheet" type="text/css" href="../css/api.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/ionic.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/tabs.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/style.css"/>
+</head>
+<body>
+
+<div class="functionPage">
+    <!--<div class="topStatus"></div>-->
+    <div class="header-banner">
+        <img src="../image/img/function-banner.png">
+        <div class="text">
+            <div class="top">让经纪人工作效率提升百倍</div>
+            <div class="bottom">就在房鹰App</div>
+        </div>
+        <div class="search-box">
+            <div class="leftSelect">
+                <select>
+                    <option>房源</option>
+                    <option>客源</option>
+                    <option>楼盘</option>
+                </select>
+                <span class="inputRightText"><i class="ion-ios-arrow-down"></i></span>
+            </div>
+            <div class="rightInput">
+                <input placeholder="输入小区名称">
+            </div>
+        </div>
+    </div>
+    <div class="content-box">
+        <!-- 用List去包btn,3个算一个list -->
+        <div class="btn-list">
+            <div class="content-btn" onclick="openWin('InventoryManagement')">
+                <div class="set-middle">
+                    <span class="resources-icon"></span>
+                    <div class="text">房源管理</div>
+                </div>
+            </div>
+            <div class="content-btn" onclick="openWin('sourceManager')">
+                <div class="set-middle">
+                    <span class="tourists-icon"></span>
+                    <div class="text">客源管理</div>
+                </div>
+            </div>
+            <div class="content-btn" onclick="openWin('supplyFollow')">
+                <div class="set-middle">
+                    <span class="follow-icon"></span>
+                    <div class="text">跟进管理</div>
+                </div>
+            </div>
+        </div>
+        <div class="btn-list">
+            <div class="content-btn" onclick="openWin('maillist')">
+                <div class="set-middle">
+                    <span class="mail-icon"></span>
+                    <div class="text">通讯录</div>
+                </div>
+            </div>
+            <div class="content-btn" onclick="openWin('houseAgreementAll')">
+                <div class="set-middle">
+                    <span class="agreement-icon"></span>
+                    <div class="text">看房协议</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script type="text/javascript" src="../script/jquery-1.8.2.min.js"></script>
+<script type="text/javascript" src="../script/api.js"></script>
+<script type="text/javascript" src="../script/tool.js"></script>
+<script type="text/javascript" src="../script/fastclick.js"></script>
+<script type="text/javascript" src="../script/angular.js"></script>
+<script type="text/javascript" src="../script/directive.js"></script>
+
+<script type="text/javascript" src="../script/pageJs/frame0.js"></script>
+</html>

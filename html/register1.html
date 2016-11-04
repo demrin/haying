@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="telephone=no" name="format-detection">
+    <meta content="email=no" name="format-detection">
+    <title>房鹰登陆</title>
+    <link rel="stylesheet" href="../css/ceshi.css">
+    <link rel="stylesheet" href="../css/mui.min.css">
+</head>
+<body style="background-color:white;" ng-app="loginApp" ng-controller="loginCtrl">
+<div id="login-img">
+    <img src="../image/login1.png" alt="房鹰">
+</div>
+<div class=" inImgDown">
+    <form action="" class="inp bold" style="" >
+        <div>
+            <input type="text" name="previous " style="height: 50px;" class="previous action-button log2" value="中易房产公司/五缘湾店/W367" />
+            <div id='next2'  onclick="openWin('register2')" class="mui-btn mui-btn-block mui-btn-primary" style="margin: 30px 0;">下一步</div>
+            <div id='next3'  onclick="openWin('register2')" class="mui-btn mui-btn-block mui-btn-primary" style="margin: 30px 0;">下一步（点击状态）</div>
+        </div>
+    </form>
+</div>
+<script src="../script/jquery-1.8.2.min.js"></script>
+<!--<script src="../script/angular.js"></script>-->
+<script src="../script/api.js"></script>
+<script src="../script/tool.js"></script>
+<script src="../script/fastclick.js"></script>
+<script src="../js/InventoryManagement.js"></script>
+<script src="../js/MUI/mui.min.js"></script>
+<script src="../js/MUI/jquery.easing.min.js"></script>
+<script src="../js/lib/jquwry.validate.min.js"></script>
+<script>
+    $(function(){
+        $('body').attr('class','login-layout light-login');
+        $('#id-company-text').attr('class','blue')
+        $('#mainForm').validate({
+            rules:{
+                shopNumber:{required:true,}
+            }
+        })
+    })
+</script>
+<script language="JavaScript">
+    function ShowMenu(obj, noid) {
+        var block = document.getElementById(noid);
+        var n = noid.substr(noid.length - 1);
+        if (noid.length == 4) {
+            var ul = document.getElementById(noid.substring(0, 3)).getElementsByTagName("ul");
+            var h2 = document.getElementById(noid.substring(0, 3)).getElementsByTagName("h2");
+            for (var i = 0; i < h2.length; i++) {
+                h2[i].innerHTML = h2[i].innerHTML.replace("+", "-");
+                h2[i].style.color = "";
+            }
+            obj.style.color = "#FF0000";
+            for (var i = 0; i < ul.length; i++) {
+                if (i != n) {
+                    ul[i].className = "no";
+                }
+            }
+        } else {
+            var span = document.getElementById("menu").getElementsByTagName("span");
+            var h1 = document.getElementById("menu").getElementsByTagName("h1");
+            for (var i = 0; i < h1.length; i++) {
+                h1[i].innerHTML = h1[i].innerHTML.replace("+", "-");
+                h1[i].style.color = "";
+            }
+            obj.style.color = "#0000FF";
+            for (var i = 0; i < span.length; i++) {
+                if (i != n) {
+                    span[i].className = "no";
+                }
+            }
+        }
+        if (block.className == "no") {
+            block.className = "";
+            obj.innerHTML = obj.innerHTML.replace("-", "+");
+        } else {
+            block.className = "no";
+            obj.style.color = "";
+        }
+    }
+</script>
+<script>
+
+</script>
+
+</body>
+</html>

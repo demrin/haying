@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="telephone=no" name="format-detection">
+    <meta content="email=no" name="format-detection">
+    <title>经纪人详情</title>
+    <link rel="stylesheet" href="../css/ceshi.css">
+</head>
+<body style="background-color: #F2F2F2">
+    <div id="manList">
+        <div class="topbar">
+            <!--<span><img src="../image/permanDetail.png" alt=""></span>-->
+            <span class="backpic" onclick="goBack()">
+                <img src="../image/back1.png" alt="">
+            </span>
+            <span class="avatar">
+                <img src="../image/img/header.png" alt="">
+            </span>
+            <div class="user-info honluk_row" style="color: white;padding: 0 15px;">
+                <div class="left-text manlistinfo">
+                    <div class="name manlistname">
+                        <span class="big">陈凯歌</span>
+                        <sub><span class="small">经纪人</span></sub>
+
+                    </div>
+                    <div class="address">观音山</div>
+                    <div class="company">厦门房鹰科技有限公司</div>
+                </div>
+                <div class="right-img">
+
+                </div>
+            </div>
+        </div>
+        <div class="manTel">
+            <a href="tel:">
+                <img src="../image/phone1.png" alt="">
+                <span class="telNumber">159<span class="space"></span>5946<span class="space"></span>7894</span>
+            </a>
+        </div>
+        <div class="manTel lianxi">
+            <span class="lianxi1">微信</span>
+            <span class="lianxi2">wechat123456</span>
+        </div>
+        <div class="manTel lianxi">
+            <span class="lianxi1">QQ</span>
+            <span class="lianxi2">4654646546</span>
+        </div>
+        <div class="manTel lianxi">
+            <span class="lianxi1">邮箱</span>
+            <span class="lianxi2">123@161.com</span>
+        </div>
+        <div class="his">
+            <div class="hishouseorigin sohis" onclick="openWin('myDetailinfos')">
+                <span class="hispic"><img src="../image/houseorigin.png" alt=""></span>
+                <span class="hison">他的房源<span class="on">(4)</span></span>
+            </div>
+            <div class="hiscustomerorigin sohis" onclick="openWin('myDetailinfos')">
+                <span class="hispic"><img src="../image/customerorigin.png" alt=""></span>
+                <span class="hison">他的客源<span class="on">(6)</span></span>
+            </div>
+        </div>
+    </div>
+    <script src="../script/jquery-1.8.2.min.js"></script>
+    <script src="../script/angular.js"></script>
+    <script src="../script/anotherPage.js"></script>
+    <script src="../script/api.js"></script>
+    <script src="../script/tool.js"></script>
+    <script src="../script/fastclick.js"></script>
+</body>
+</html>

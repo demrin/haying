@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="telephone=no" name="format-detection">
+    <meta content="email=no" name="format-detection">
+    <title>通讯录</title>
+    <link rel="stylesheet" href="../css/ceshi.css">
+    <link rel="stylesheet" href="../js/MUI/mui.min.css">
+    <link rel="stylesheet" href="../css/maillist.css">
+</head>
+<body style="background-color: #F2F2F2">
+<div id="top" style="background-color: #F9F9F9">
+    <div id="top1" onclick="goBack()">
+        <img src="../image/left.png" alt="">
+    </div>
+    <div id="top2" class="maillist">
+        <h3>通讯录</h3>
+    </div>
+    <div id="top3">
+        <!--<h4>查看原文</h4>-->
+    </div>
+</div>
+<div id="maillist" class="paddingTo">
+    <div class="mailsearch">
+        <input type="text" placeholder="搜索">
+    </div>
+    <div class="sectionSelect" onclick="openWin('department')">
+        <span class="cpc">
+            <img src="../image/cps.png" alt="">
+        </span>
+        <span class="sectionname">公司部门</span>
+        <span class="right">
+            <img src="../image/right1.png" alt="">
+        </span>
+    </div>
+</div>
+
+<div class="mailname">
+    <span class="apalth">F</span>
+    <div class="choosename" onclick="openWin('manList')">
+        <span>
+            <img src="../image/namepic.png" alt="">
+        </span>
+        <span class="mailinfo">
+            <strong><article class="name">付少</article></strong>
+            <article class="nameintro" style="font-size: 13px">鑫海酒店  销售顾问</article>
+        </span>
+    </div>
+    <span class="apalth">h</span>
+    <div class="choosename">
+        <span>
+            <img src="../image/namepic.png" alt="">
+        </span>
+        <span class="mailinfo">
+            <strong><article class="name">付少</article></strong>
+            <article class="nameintro" style="font-size: 13px">鑫海酒店  销售顾问</article>
+        </span>
+    </div>
+    <div class="choosename">
+            <span>
+                <img src="../image/namepic.png" alt="">
+            </span>
+        <span class="mailinfo">
+                <strong><article class="name">付少</article></strong>
+                <article class="nameintro" style="font-size: 13px">鑫海酒店  销售顾问</article>
+            </span>
+    </div>
+    <span class="apalth">S</span>
+    <div class="choosename">
+        <span>
+            <img src="../image/namepic.png" alt="">
+        </span>
+        <span class="mailinfo">
+            <strong><article class="name">付少</article></strong>
+            <article class="nameintro" style="font-size: 13px">鑫海酒店  销售顾问</article>
+        </span>
+    </div>
+    <div class="choosename">
+            <span>
+                <img src="../image/namepic.png" alt="">
+            </span>
+        <span class="mailinfo">
+                <strong><article class="name">付少</article></strong>
+                <article class="nameintro" style="font-size: 13px">鑫海酒店  销售顾问</article>
+            </span>
+    </div>
+</div>
+<script src="../script/jquery-1.8.2.min.js"></script>
+<script src="../script/angular.js"></script>
+<script src="../script/anotherPage.js"></script>
+<script src="../script/api.js"></script>
+<script src="../script/tool.js"></script>
+<script src="../script/fastclick.js"></script>
+<script src="../js/MUI/mui.min.js"></script>
+<script src="../js/MUI/mui.maillist.js"></script>
+</body>
+</html>

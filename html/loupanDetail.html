@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="telephone=no" name="format-detection">
+    <meta content="email=no" name="format-detection">
+    <title>房源详情-国贸蓝海</title>
+    <link rel="stylesheet" href="../css/ceshi.css">
+    <link rel="stylesheet" href="../js/MUI/mui.min.css">
+</head>
+<body>
+<div id="top" style="background-color: white">
+    <div id="top1" onclick="goBack('houseDetail1')">
+        <img src="../image/left.png" alt="">
+    </div>
+    <div id="top2" style="top: 33px;">
+        <h4>国贸蓝海</h4>
+    </div>
+    <div id="top3" class="tianjiaicon">
+        <!--<img src="../image/+icon.png" alt="">-->
+    </div>
+</div>
+<div id="housedetail">
+
+    <div id="slider" class="mui-slider" style="height: 235px">
+        <div class="mui-slider-group mui-slider-loop">
+            <div class="mui-slider-item mui-slider-item-duplicate">
+                <a href="#">
+                    <img style="width: 100%;" src="../image/perHousePic.png" alt="">
+                </a>
+            </div>
+            <div class="mui-slider-item">
+                <a href="#">
+                    <img src="../image/newpic.png" >
+                </a>
+            </div>
+            <div class="mui-slider-item">
+                <a href="#">
+                    <img style="width: 100%;" src="../image/perHousePic.png" alt="">
+                </a>
+            </div>
+            <div class="mui-slider-item">
+                <a href="#">
+                    <img src="../image/newpic.png" >
+                </a>
+            </div>
+            <div class="mui-slider-item">
+                <a href="#">
+                    <img style="width: 100%;" src="../image/perHousePic.png" alt="">
+                </a>
+            </div>
+            <div class="mui-slider-item mui-slider-item-duplicate">
+                <a href="#">
+                    <img src="../image/newpic.png" >
+                </a>
+            </div>
+        </div>
+        <div class="mui-slider-indicator">
+            <div class="mui-indicator mui-active"></div>
+            <div class="mui-indicator"></div>
+            <div class="mui-indicator"></div>
+        </div>
+    </div>
+
+    <div class="housedetailinfos loupandetail" style="padding: 0;">
+        <ul class="loupanziti">
+            <li style="margin: 10px 0;"><strong>小区信息</strong></li>
+            <li style="margin: 10px 0;"><span class="infosspan sp1">0.8元/㎡/月</span><span class="rightinfos infosspan sp2">1216户</span></li>
+            <li style="margin: 10px 0;"><span  class="infosspan sp3">3</span><span class="rightinfos infosspan sp4">2006年</span></li>
+            <li style="margin: 10px 0;"><span  class="infosspan sp5">35%</span><span class="rightinfos infosspan sp6">楼板</span></li>
+            <li style="margin: 10px 0;"><span class="infosspan sp7">房屋产权</span></li>
+            <div style="width:140%;height: 20px;background-color: #F1F1F1;position: relative;left: -36%;"></div>
+            <li style="margin: 10px 0;" onclick="openWin('louxingDetail')">
+                全部出售房源<cl class="chushouliang" style="color: lightcoral;margin: 0 5px;">3</cl>套
+                <you class="you"><img style="margin-top: -5px;" src="../image/you.png" alt=""></you>
+            </li>
+            <li style="margin: 10px 0;" onclick="openWin('louxingDetail')">
+                全部出租房源<cl class="chuzuliang" style="color: lightcoral;margin: 0 5px;">25</cl>套
+                <you class="you"><img style="margin-top: -5px;" src="../image/you.png" alt=""></you>
+            </li>
+        </ul>
+    </div>
+</div>
+<script src="../script/jquery-1.8.2.min.js"></script>
+<script src="../script/angular.js"></script>
+<script src="../script/anotherPage.js"></script>
+<script src="../script/api.js"></script>
+<script src="../script/tool.js"></script>
+<script src="../script/fastclick.js"></script>
+<script src="../js/MUI/mui.min.js"></script>
+<script>
+    mui.init({
+        swipeBack:true //启用右滑关闭功能
+    });
+    var slider = mui("#slider");
+    slider.slider({
+        interval: 3000
+    });
+</script>
+</body>
+</html>

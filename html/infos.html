@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="telephone=no" name="format-detection">
+    <meta content="email=no" name="format-detection">
+    <title>个人信息</title>
+    <link rel="stylesheet" href="../css/ceshi.css">
+    <link rel="stylesheet" href="../js/MUI/mui.min.css">
+</head>
+
+<body id="perinfos">
+    <div id="infos">
+        <div class="infoTop">
+            <div style="width: 100%;position: relative;top: 30px;float: right;">
+                <span id="LI" onclick="goBack()"><img src="../image/li.png" style="width: 20px;height: 20px;position: absolute;left: 15px;top: 15px;"></span>
+                <span style="display: inline-block;width: 95%;text-align: right">
+                <span onclick="openWin('reset')"><img src="../image/reset.png" style="width: 42px;height: 24px;"></span>
+                <img src="../image/edit.png" style="width: 42px;height: 24px;">
+                </span>
+            </div>
+            <div style="text-align: center">
+                <img src="../image/avtar.png" style="width: 100px;height: 100px;border-radius: 50%;">
+            </div>
+            <div class="infoname">程乙烯</div>
+        </div>
+    </div>
+    </div>
+    <div>
+        <div class="infodetail">
+            公司名称
+            <div class="inde" v-model="firmName">{{firmName}}</div>
+        </div>
+        <div class="infodetail">
+            所属部门
+            <div class="inde" v-model="department">鑫海酒店</div>
+        </div>
+        <div class="infodetail">
+            岗位名称
+            <div class="inde" v-model="position">销售顾问</div>
+        </div>
+        <div class="infodetail">
+            联系电话
+            <div class="inde" v-model="tel">15759791237</div>
+        </div>
+        <div class="infodetail">
+            微信号
+            <div class="inde" v-model="wechatNumber">wechat123456</div>
+        </div>
+        <div class="infodetail">
+            qq号
+            <div class="inde" v-model="qq">12346798</div>
+        </div>
+        <div class="infodetail">
+            邮箱
+            <div class="inde" v-model="email">cyx@163.com</div>
+        </div>
+    </div>
+    <script src="../script/jquery-1.8.2.min.js"></script>
+    <script src="../js/lib/Vue/vue.js"></script>
+    <script src="../script/api.js"></script>
+    <script src="../script/tool.js"></script>
+    <script src="../script/fastclick.js"></script>
+    <script src="../js/MUI/mui.min.js"></script>
+    <script src></script>
+</body>
+
+</html>

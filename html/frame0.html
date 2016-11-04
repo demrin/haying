@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+    <title>首页</title>
+    <link rel="stylesheet" type="text/css" href="../css/api.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/tabs.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/style.css"/>
+    <link rel="stylesheet" href="../css/ceshi.css">
+
+</head>
+<body ng-app="App" ng-controller="frame0Ctrl">
+
+<div class="homePage">
+    <div class="topStatus" style="position: fixed;z-index: 999;"></div>
+    <div class="header-selects-box" style="position: fixed;z-index: 999;background-color: #F2F2F2;top: 25px;">
+        <span class="header-select active">年</span>
+        <span class="header-select">季</span>
+        <span class="header-select">月</span>
+        <span class="header-select">周</span>
+    </div>
+    <!-- 业绩排行 -->
+    <div class="sub-line-header" style="position: fixed;z-index: 999;top: 23px;">
+        业绩排行
+    </div>
+    <div class="bar-chart-box" id="container" style="min-width: 300px;max-width:1000px;padding-top: 50px;overflow-y: auto;">
+
+    </div>
+    <!-- 工作量统计 -->
+    <div class="sub-line-header">
+        工作量统计
+    </div>
+    <div class="workload-box honluk_row">
+        <!-- col-33意思是宽度为33.333333% -->
+        <div class="col-33">
+            <div class="workload-sub-box">
+                <div class="top">新增房源</div>
+                <div class="middle">59</div>
+                <div class="bottom">
+                    <span class="text">套</span>
+                    <!-- 上升用up-icon -->
+                    <span class="up-or-down-box">
+
+                    <span class="green-text">33%</span>
+                    <span class="up-icon"></span>
+                </span>
+                </div>
+            </div>
+        </div>
+        <div class="col-33">
+            <div class="workload-sub-box">
+                <div class="top">新增客源</div>
+                <div class="middle">5</div>
+                <div class="bottom">
+                    <span class="text">个</span>
+                    <!-- 下降用down-icon -->
+                        <span class="up-or-down-box">
+                            <span class="red-text">33%</span>
+                            <span class="down-icon"></span>
+                        </span>
+                </div>
+            </div>
+        </div>
+        <div class="col-33">
+            <div class="workload-sub-box">
+                <div class="top">新增客源</div>
+                <div class="middle">5</div>
+                <div class="bottom">
+                    <span class="text">个</span>
+                    <!-- 下降用down-icon -->
+                        <span class="up-or-down-box">
+                            <span class="red-text">33%</span>
+                            <span class="down-icon"></span>
+                        </span>
+                </div>
+            </div>
+        </div>
+        <div class="col-33">
+            <div class="workload-sub-box">
+                <div class="top">新增客源</div>
+                <div class="middle">5</div>
+                <div class="bottom">
+                    <span class="text">个</span>
+                    <!-- 下降用down-icon -->
+                        <span class="up-or-down-box">
+                            <span class="red-text">33%</span>
+                            <span class="down-icon"></span>
+                        </span>
+                </div>
+            </div>
+        </div>
+        <div class="col-33">
+            <div class="workload-sub-box">
+                <div class="top">新增房源</div>
+                <div class="middle">59</div>
+                <div class="bottom">
+                    <span class="text">套</span>
+                    <!-- 上升用up-icon -->
+                    <span class="up-or-down-box">
+
+                    <span class="green-text">33%</span>
+                    <span class="up-icon"></span>
+                </span>
+                </div>
+            </div>
+        </div>
+        <div class="col-33">
+            <div class="workload-sub-box">
+                <div class="top">新增客源</div>
+                <div class="middle">5</div>
+                <div class="bottom">
+                    <span class="text">个</span>
+                    <!-- 下降用down-icon -->
+                        <span class="up-or-down-box">
+                            <span class="red-text">33%</span>
+                            <span class="down-icon"></span>
+                        </span>
+                </div>
+            </div>
+        </div>
+        <div class="col-33">
+            <div class="workload-sub-box">
+                <div class="top">新增客源</div>
+                <div class="middle">5</div>
+                <div class="bottom">
+                    <span class="text">个</span>
+                    <!-- 下降用down-icon -->
+                        <span class="up-or-down-box">
+                            <span class="red-text">33%</span>
+                            <span class="down-icon"></span>
+                        </span>
+                </div>
+            </div>
+        </div>
+        <div class="col-33">
+            <div class="workload-sub-box">
+                <div class="top">新增客源</div>
+                <div class="middle">5</div>
+                <div class="bottom">
+                    <span class="text">个</span>
+                    <!-- 下降用down-icon -->
+                        <span class="up-or-down-box">
+                            <span class="red-text">33%</span>
+                            <span class="down-icon"></span>
+                        </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 工作量到此结束 -->
+    <div class="sub-line-header">
+        业绩目标与完成
+    </div>
+    <div class="pei-chart-box honluk_row">
+        <div class="pei-chart" id="main" style="min-width: 100px">
+            <!--饼状图这里-->
+            <div id="xiagao">
+                <div id="xiagao2"></div>
+            </div>
+        </div>
+        <div class="right-text">
+            <div class="top blue-color">已完成:20000¥</div>
+            <div class="bottom">目&nbsp;标:3000000¥</div>
+        </div>
+    </div>
+</div>
+
+</body>
+    <script type="text/javascript" src="../script/jquery-1.8.2.min.js"></script>
+    <script type="text/javascript" src="../script/api.js"></script>
+    <script type="text/javascript" src="../script/tool.js"></script>
+    <script type="text/javascript" src="../script/fastclick.js"></script>
+    <script type="text/javascript" src="../script/angular.js"></script>
+    <script type="text/javascript" src="../script/directive.js"></script>
+
+    <script type="text/javascript" src="../script/pageJs/frame0.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $('#container').highcharts({
+                chart: {
+                    type: 'column'
+                },
+                title:{
+                    style:{
+                        display:'none',
+                        position:'relative',
+                        left:'-30px'
+                    }
+                },
+                xAxis: {
+                    type: 'category',
+                    labels: {
+                        rotation: -45,
+                        style: {
+                            fontSize: '10px',
+                            fontFamily: 'Verdana, sans-serif'
+                        }
+                    }
+                },
+                yAxis: {
+                    min: 0,
+                    title: {
+                        enabled: false
+                    }
+                },
+                credits:{
+                    enabled: false
+                },
+                legend: {
+                    enabled: false
+                },
+                tooltip: {
+                    pointFormat: '员工业绩 <b>{point.y:.1f} 百万</b>'
+                },
+                series: [{
+                    name: 'Population',
+                    data: [
+                        ['赵飞燕', 23.7],
+                        ['小乔', 16.1],
+                        ['多尔衮', 14.2],
+                        ['努尔哈赤', 14.0],
+                        ['崇祯', 12.5],
+                        ['金兀术', 12.1],
+                        ['高洪波', 11.8],
+                        ['铁中棠', 11.7],
+                        ['陆小凤', 11.1],
+                        ['萧十一郎', 11.1],
+                        ['阳顶天', 10.5],
+                        ['萧十一郎', 11.1],
+                        ['萧十一郎', 11.1],
+                        ['萧十一郎', 11.1],
+                    ],
+                    dataLabels: {
+                        enabled: true,
+                        rotation: -90,
+                        color: '#FFFFFF',
+                        align: 'right',
+                        format: '{point.y:.1f}', // one decimal
+                        y: 10, // 10 pixels down from the top
+                        style: {
+                            fontSize: '10px',
+                            fontFamily: 'Verdana, sans-serif'
+                        }
+                    }
+                }]
+            });
+        });
+    </script>
+    <script src="../js/lib/highcharts.js"></script>
+</html>

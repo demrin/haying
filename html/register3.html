@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="telephone=no" name="format-detection">
+    <meta content="email=no" name="format-detection">
+    <title>房鹰登陆</title>
+    <link rel="stylesheet" href="../css/ceshi.css">
+    <link rel="stylesheet" href="../css/mui.min.css">
+    <link rel="stylesheet" href="../js/MUI/zzsc.css">
+    <style>
+        *,body,ul,li,h1,h2 {
+            margin: 0; padding: 0; list-style: none; }
+        .menu {
+            margin: -20px 0 20px 0;
+            z-index: 99;
+            display: inline-block;
+            width:50%;
+            float: left;
+        }
+        .menu h1 {
+            cursor: pointer;
+            color: #FFF;
+            height:40px;
+            font-size: 16px;
+            padding: 17px 10px;
+            border-bottom: 2px solid #02a9f5;
+            margin-top: 1px;
+            color: black;
+        }
+        .menu h2 {
+            cursor: pointer;
+            color: #777;
+            font-size: 14px;
+            height:30px;
+            padding: 8px 0 8px 10px;
+            border: #E7E7E7 1px solid;
+            border-top-color: #FFF;
+        }
+        .menu ul {
+            padding-left: 15px;
+            height: 100px;
+            border: #E7E7E7 1px solid;
+            border-top: none;
+            overflow: auto;
+        }
+        .menu ul li {
+            padding: 5px 0 3px 10px;
+        }
+        .no {
+            display: none;
+        }
+    </style>
+</head>
+<body style="background-color:white;" ng-app="loginApp" ng-controller="loginCtrl">
+<div id="login-img">
+    <img src="../image/login1.png" alt="房鹰">
+</div>
+<div class=" inImgDown">
+    <form action="" class="inp lastinp" style="" >
+        <div>
+            <div style="width: 100%;height: 50px;">
+                <div class="menu" style="width: 55%;margin-right: 5%">
+                    <h1 onClick="javascript:ShowMenu(this,'NO0')">中易房产有限公司</h1>
+                    <span id="NO0" class="no">
+                    <h2 onClick="javascript:ShowMenu(this,'NO00')">+鑫海酒店</h2>
+                    <ul id="NO00" class="no">
+                        <li>飞虎部</li>
+                        <li>青龙堂</li>
+                        <li>朱雀堂</li>
+                        <li>白虎堂</li>
+                    </ul>
+                    <h2 onClick="javascript:ShowMenu(this,'NO01')">+祥和酒店</h2>
+                    <ul id="NO01" class="no">
+                        <li>龙堂</li>
+                        <li>虎堂</li>
+                        <li>飞鹰堂</li>
+                        <li>执法堂</li>
+                        <li>暗组</li>
+                    </ul>
+                    <h2 onClick="javascript:ShowMenu(this,'NO02')">+五缘湾店</h2>
+                    <ul id="NO02" class="no">
+                        <li>天</li>
+                        <li>罗</li>
+                        <li>地</li>
+                        <li>网</li>
+                    </ul>
+                    </span>
+                </div>
+                <div class="menu" style="width: 35%;margin-left: 5%">
+                    <h1 onClick="javascript:ShowMenu(this,'NO0')">姓名</h1>
+                    <span id="NO0" class="no">
+                    <h2 onClick="javascript:ShowMenu(this,'NO00')">+鑫海酒店</h2>
+                    <ul id="NO00" class="no">
+                        <li>飞虎部</li>
+                        <li>青龙堂</li>
+                        <li>朱雀堂</li>
+                        <li>白虎堂</li>
+                    </ul>
+                    <h2 onClick="javascript:ShowMenu(this,'NO01')">+祥和酒店</h2>
+                    <ul id="NO01" class="no">
+                        <li>龙堂</li>
+                        <li>虎堂</li>
+                        <li>飞鹰堂</li>
+                        <li>执法堂</li>
+                        <li>暗组</li>
+                    </ul>
+                    <h2 onClick="javascript:ShowMenu(this,'NO02')">+五缘湾店</h2>
+                    <ul id="NO02" class="no">
+                        <li>天</li>
+                        <li>罗</li>
+                        <li>地</li>
+                        <li>网</li>
+                    </ul>
+                    </span>
+                </div>
+            </div>
+            <input type="text" name="previous " style="height: 50px;margin:30px 0;" class="previous action-button inp" placeholder="请输入您的密码" />
+            <button id='next5' onclick="shopNumber"  class="mui-btn mui-btn-block mui-btn-primary">登陆</button>
+            <div  style="text-align: right;font-weight: bold">
+                <a style="color: #02A9F5;position: relative;float: left;">切换门店</a>
+                <span style="text-align: right;">
+                <span style="color: #CCC">没有账号？</span>
+                    <a id='forgetPassword' style="color: #FBA935;">立即注册</a>
+                </span>
+            </div>
+        </div>
+    </form>
+
+</div>
+<script src="../script/jquery-1.8.2.min.js"></script>
+<!--<script src="../script/angular.js"></script>-->
+<script src="../script/api.js"></script>
+<script src="../script/tool.js"></script>
+<script src="../script/fastclick.js"></script>
+<script src="../js/InventoryManagement.js"></script>
+<script src="../js/MUI/mui.min.js"></script>
+<script src="../js/MUI/jquery.easing.min.js"></script>
+<script src="../js/lib/jquery.validate.min.js"></script>
+<script language="JavaScript">
+//    function ShowMenu(obj, noid) {
+//        var block = document.getElementById(noid);
+//        var n = noid.substr(noid.length - 1);
+//        if (noid.length == 4) {
+//            var ul = document.getElementById(noid.substring(0, 3)).getElementsByTagName("ul");
+//            var h2 = document.getElementById(noid.substring(0, 3)).getElementsByTagName("h2");
+//            for (var i = 0; i < h2.length; i++) {
+//                h2[i].innerHTML = h2[i].innerHTML.replace("+", "-");
+//                h2[i].style.color = "";
+//            }
+//            obj.style.color = "#FF0000";
+//            for (var i = 0; i < ul.length; i++) {
+//                if (i != n) {
+//                    ul[i].className = "no";
+//                }
+//            }
+//        } else {
+////            var span = document.getElementById("menu").getElementsByTagName("span");
+//            var h1 = document.getElementById("menu").getElementsByTagName("h1");
+//            for (var i = 0; i < h1.length; i++) {
+//                h1[i].innerHTML = h1[i].innerHTML.replace("+", "-");
+//                h1[i].style.color = "";
+//            }
+//            obj.style.color = "#0000FF";
+//            for (var i = 0; i < span.length; i++) {
+//                if (i != n) {
+//                    span[i].className = "no";
+//                }
+//            }
+//        }
+//        if (block.className == "no") {
+//            block.className = "";
+//            obj.innerHTML = obj.innerHTML.replace("-", "+");
+//        } else {
+//            block.className = "no";
+//            obj.style.color = "";
+//        }
+//    }
+</script>
+
+</body>
+</html>

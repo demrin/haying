@@ -1,0 +1,2341 @@
+*{
+    box-sizing: border-box !important;
+    list-style: none;
+    /*font-family: pingfang;*/
+}
+html,body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    /*background-color: rgb(240, 240, 240);*/
+}
+/*@font-face {*/
+    /*font-family: "pingfang";*/
+    /*src:url('../fonts/PingFang Bold.ttf') format('truetype'); !* chrome、firefox、opera、Safari, Android, iOS 4.2+*!*/
+/*}*/
+
+/*全局*/
+    .paddingTo{
+        padding:70px 0 0 0;
+    }
+/*全局*/
+
+/*注册*/
+    .inImgDown{
+        margin-top: 50px;
+        width:100%;
+    }
+    .regiShop{
+        margin:50px 0!important;
+        padding:0 20px;
+    }
+    .inp{
+        padding:0 20px !important;
+    }
+    .inp input{
+        border:none !important;
+    }
+    .bold input{
+        border-bottom: 2px solid #02a9f5 !important;
+    }
+    .bold input[value]{
+        font-weight: bold;
+    }
+    .shopname{
+        width: 40% !important;
+        height: 40px !important;
+        position: relative;
+        float: right!important;
+        top: -15px !important;
+        margin: 0 !important;
+    }
+    .lastinp input{
+        border-top: 2px solid rgb(211,211,211) !important;
+        border-bottom: 2px solid rgb(211,211,211) !important;
+    }
+    .inImgDown input[placeholder]{
+        font-weight: bold!important;
+    }
+    #next1{
+        margin:20px 0!important;
+        /*height:50px;*/
+    }
+    .forgetPassword{
+        color: #FBA935;
+    }
+    .employName{
+        width:47% !important;
+        position: relative;
+        top:-15px;
+    }
+    .half{
+        display: inline-block;
+        width:50%;
+        height:40px;
+        float: left;
+    }
+    .halfright{
+        width:40%;
+        float: right;
+    }
+    .halfright input{
+        margin:0;
+        height:40px;
+    }
+    .firmName{
+        font-size: 16px;
+        /*padding:12px 0;*/
+    }
+    #next5:active{
+        background-color: #03AAF5;
+    }
+/*注册*/
+/*登陆*/
+    #login-img{
+        width:100%;
+    }
+    #login-img img{
+        width: 100%;
+    }
+    .login-form{
+        margin: 70px auto 50px;
+    }
+    .ss{
+        margin: 20px 20px;
+    }
+    .login-input{
+        width: 100%;
+        height: 50px;
+        border: none!important;
+        border-bottom: 1px solid #F2F2F2 !important;
+    }
+    button{
+        width:100%;
+        color: white;
+        font-size: 17px;
+        border:none;
+        background-color: rgb(2,169,245);
+    }
+/*登陆*/
+
+/*顶部*/
+    #top{
+        width: 100%;
+        padding:20px 0 0 0;
+        height: 70px;
+        background-color: #F2F2F2;
+        box-sizing: border-box;
+        position: fixed;
+        top: 0;
+        z-index: 9999;
+        border-bottom: 1px solid #DEDEDE;
+    }
+    #top1 img{
+        width: 35px;
+        height: 35px;
+        margin: 9px 15px 11px 10px;
+    }
+    #top>div{
+        display: inline-block;
+        /*width: 20%;*/
+    }
+    #top>div:first-child{
+        width:15%;
+    }
+    #top>div:nth-child(2){
+        width:70%;
+    }
+    #top>div:last-child{
+        width:15%;
+    }
+    #top2{
+        width: 100%;
+        text-align: center;
+        box-shadow: none;
+        position: absolute;
+        top: 15px;
+        font-size: 16px;
+    }
+    #top3{
+        position: absolute;
+        right:10px;
+        display: inline-block;
+        width: 65px;
+        text-align: right;
+        font-size: 16px;
+        color: rgb(137, 197, 226);
+        top: 13px;
+    }
+    #top3 img{
+        width: 16px;
+        height: 16px;
+        margin: 18px 10px 10px;
+    }
+/*顶部*/
+
+/*意见反馈*/
+    #title{
+        width: 100%;
+        padding: 70px 0 0;
+        position: absolute;
+    }
+    #title textarea{
+        position: relative;
+        width: 100%;
+        height: 220px;
+        border: none;
+    }
+    #title label{
+        width: 100%;
+        height: 30px;
+        background-color: lightgray;
+    }
+    .info{
+        display: block;
+        width: 100%;
+        height: 32px;
+        background-color: rgb(235,235,235);
+        padding: 8px 20px 0;
+        font-size: 16px;
+    }
+    .perinfo{
+        position: relative;
+        /*top: -3px;*/
+    }
+    #title input{
+        height: 30px;
+    }
+    .contact{
+        height: 50px;
+        width:100%;
+        background-color: #ffffff;
+        /*margin-bottom: 10px;*/
+    }
+    .contact>span{
+        display: inline-block;
+        float: left;
+        height:50px;
+        vertical-align: middle;
+    }
+    #title .border{
+        width:100%;
+        height: 2px ;
+        background-color: rgb(242,242,242);
+    }
+    .contact img{
+        position: relative;
+        /*top: 15px;*/
+        width: 40px;
+        height: 50px;
+    }
+    .contact input{
+        width: 300px;
+        height: 40px !important;
+        position: relative;
+        margin:5px 0;
+        padding:5px;
+        border: 1px solid #fff;
+    }
+/*意见反馈*/
+
+/*推荐分享*/
+    #share{
+        text-align: center;
+    }
+    #code{
+        width: 100%;
+        margin: 50px auto 0;
+    }
+    #code img{
+        width: 100%;
+
+    }
+    .share{
+        width: 100%;
+        text-align: center;
+    }
+    .share button{
+        width: 50%;
+        height: 40px;
+        margin: 50px auto 0;
+        background-color: rgb(137, 197, 226);
+        position: relative;
+        top: 70px;
+        margin: 0 0 20px 0;
+        border: 1px solid #fff;
+    }
+/*推荐分享*/
+
+/*关于我们*/
+    #about{
+        width: 100%;
+        margin: 50px auto 0;
+    }
+    #about img{
+        width: 100px;
+        height: 100px;
+        margin: 40px auto 0;
+    }
+    .logo{
+        width: 100%;
+        text-align: center;
+    }
+    #about h4,h6{
+        margin: 5px;
+    }
+    #about article{
+        margin: 40px 20px 0;
+        font-size: 14px;
+    }
+    #about article::nth-child(2){
+        margin: 40px 20px 20px;
+    }
+    #about h5{
+        text-align: center;
+        margin: 5px;
+    }
+    #about span{
+        text-align: center;
+    }
+    #about span::nth-child(1){
+        margin: 10px auto;
+    }
+    #about span p a{
+        font-size: 17px;
+        color: dodgerblue;
+    }
+/*关于我们*/
+
+/*设置*/
+    #setting{
+        font-size: 16px;
+    }
+    .modal{
+        width: 100%;
+        height: 40px;
+        margin: 5px 0 3px 0;
+        padding: 5px;
+    }
+    .set{
+        height:40px;
+        padding:5px 15px 7px;
+    }
+    .setinfo{
+        font-size: 12px;
+        padding:10px 0 10px 15px;
+    }
+    #div1{
+        width:48px;
+        height:24px;
+        /*top:10px;*/
+        border-radius: 20px;
+        position: relative;
+        display: inline-block;
+        right:-200px;
+    }
+    #div2{
+        width:24px;
+        height:24px;
+        display: inline-block;
+        border-radius: 20px;
+        position: absolute;
+        background-color: white;
+        box-shadow: none;
+    }
+    .open1{
+        background-color: rgb(0,184,0);
+    }
+/*设置*/
+
+/*重置密码*/
+    #resetInfos{
+        margin: 50px 0 0 0;
+    }
+    .reset{
+        width: 100%;
+        height: 50px;
+        margin: 5px 0;
+        border: 1px solid #F2F2F2;
+    }
+    .reset img{
+        position: relative;
+        /*top: 5px;*/
+        width: 50px;
+        height: 50px;
+        padding:12px;
+        /*margin:5px 0;*/
+    }
+    .reset input{
+        width: 80%;
+        height: 50px;
+        position: relative;
+        top: -17px;
+        border: 1px solid #fff;
+    }
+    #resetInfos input{
+        
+    }
+/*重置密码*/
+
+/*房市头条*/
+    #houseHeadlines{
+        width:100%;
+        /*margin:50px 0 0 0;*/
+    }
+    .houseHeadlines{
+        width: 100%;
+        height: 20%;
+        margin: 5px 20px;
+    }
+    .houseHeadline{
+        width: 100%;
+        height:120px;
+        display: inline-block;
+        float: left;
+        padding: 10px 15px;
+        border-bottom: 1px solid #DEDEDE;
+    }
+    .linestitle{
+        font-weight: bold;
+        font-size: 14px;
+        height:80px;
+    }
+    .h-l-l{
+        position: relative;
+        height:20px;
+    }
+    .newtime{
+        position: relative;
+        float: right;
+    }
+    .houseHeadlines-left{
+        width: 60%;
+        padding-right: 15px;
+        float: left;
+        height:100px;
+    }
+    .houseHeadlines-right{
+        display: inline-block;
+        width: 40%;
+        /*padding:10px 10px 10px 10px;*/
+        height:100px;
+    }
+    .houseHeadlines-right img{
+        width: 100%;
+    }
+    .houseHeadline span{
+        display: inline-block;
+        /*margin: 15px 10px 0 5px;*/
+    }
+/*房市头条*/
+
+/*个人房源订阅*/
+    .tab{
+        width: 100%;
+        height:40px;
+        position: fixed;
+        top: 50px;
+        background-color: rgb(255, 255, 255);
+        z-index: 9998;
+    }
+    .tab span{
+        width: 23.3%;
+        height: 40px;
+        display: inline-block;
+        text-align: center;
+        margin: 5px auto;
+        padding: 5px;
+        font-weight: bold;
+    }
+    .tabTop{
+        position: fixed;
+        background-color: #9BB1C8;
+    }
+    .housesubscr{
+        margin-top: 50px!important;
+        z-index:999!important;
+        position: fixed !important;
+        height:50px!important;
+        padding:25px 0 5px;
+    }
+    .housesubscr a{
+        position: relative;
+        font-weight: bold;
+        /*top:70px;*/
+    }
+    .housesubscr .mui-control-item{
+        /*background-color: #858585!important;*/
+    }
+    .houseScriptions{
+        margin: 50px 0 0 0;
+    }
+    .houseScriptions ul{
+        margin: 5px 10px;
+    }
+    .houseScription{
+        position: relative;
+        height: 90px;
+        left: -5%;
+        margin: 15px -15px  10px;
+    }
+    .houseScription-left img{
+        width: 100%;
+    }
+    .houseScription-left{
+        width: 30%;
+        float: left;
+        margin: 10px 0 5px;
+    }
+    .houseScription-right{
+        width: 70%;
+        display: inline-block;
+        padding: 0 15px 0 20px;
+        margin: 7px 0;
+        /*line-height: 120%;*/
+    }
+    .houseScription-right .jieshao{
+        font-weight: bold;
+        font-size: 15px;
+    }
+    .houseScription-right .any{
+        display: inline-block;
+        width:100%;
+        position: relative;
+        float: left;
+        font-size: 12px;
+        font-weight:300;
+        color: #B4B4B4;
+    }
+    .persub{
+        z-index: 999;
+        font-weight: bold;
+    }
+    .any span{
+        font-size: 10px !important;
+    }
+    .any span , .n-p span {
+        display: inline;
+    }
+    .newprice{
+        display: inline;
+        position: relative;
+        float: right;
+        /*right: 10px;*/
+        text-align: right;
+        color: red !important;
+        font-size: 14px;
+    }
+    .n-p{
+        color: #B4B4B4;
+        height: 20px;
+        font-size: 10px;
+    }
+    .hsu{
+
+    }
+/*个人房源订阅*/
+
+/*求购详情*/
+    #purchaseDetail{
+        margin: 10px 0;
+        padding: 5px 5px;
+        background-color: white;
+    }
+    #purchaseDetail .titleTop{
+        width: 100%;
+        margin: 20px 0 10px;
+        font-size: 16px;
+        padding: 0 10px;
+    }
+    #purchaseDetail .titleInfo{
+        width: 100%;
+        padding:0 15px;
+    }
+    #purchaseDetail .left{
+        width: 50%;
+        display: inline-block;
+        float: left;
+        margin: 10px -11px 10px;
+        color: rgb(180,180,180);
+    }
+    #purchaseDetail .right{
+        width: 50%;
+        display: inline-block;
+        text-align: right;
+        right: 0;
+        font-weight: bold;
+        margin: 10px 0 10px;
+        color: rgb(31, 163, 181)
+    }
+    #purchaseDetail .detail{
+        border-top: 1px solid #F2F2F2;
+        border-bottom: 1px solid #F2F2F2;
+        height: 100px;
+    }
+    #purchaseDetail .detail div{
+        display: inline-block;
+        float: left;
+        margin-top: 30px;
+        text-align: center;
+        width: 33.3%;
+    }
+    #purchaseDetail .detail div:nth-child(2){
+        border-left: 1px solid #F2F2F2;
+    }
+    #purchaseDetail .detail div:nth-child(3){
+        border-left: 1px solid #F2F2F2;
+    }
+    .ii{
+        color: rgb(255, 0, 0);
+    }
+    .qiugouadd{
+        margin: 10px 0;
+        height:30px;
+        font-weight: bold;
+        padding: 10px 15px 5px;
+    }
+    .tel{
+        background-color: white;
+        margin: 5px 20px;
+        padding: 10px 0;
+        height:60px;
+    }
+    .tel div{
+        width:50%;
+        margin:5px 0;
+        font-weight: bold;
+    }
+    .i{
+        font-weight: bold;
+        margin:3px 0 5px;
+    }
+/*求购详情*/
+
+/*首页*/
+    #main{
+        /*width:700px;*/
+        overflow-x: scroll !important;
+    }
+/*首页*/
+
+/*新闻详情*/
+    #houseHeadline{
+        margin:50px 0 0 0;
+        padding: 20px 20px 0;
+        background-color: white!important;
+    }
+    #houseHeadline h3,h5{
+        padding: 0 40px;
+        text-align: center;
+    }
+    .detailLine{
+        background-color: white!important;
+    }
+    .houseHeadline h4{
+        text-align: center;
+    }
+    .scr h4{
+        display: inline;
+    }
+    .newstitle{
+        padding: 0 10px; 
+    }
+    .newpic img{
+        margin: 10px 0;
+        width: 100%;
+    }
+    .recommend{
+        width: 100%;
+    }
+    .scr{
+        margin: 30px 0 0 0 ;
+        text-align: center;
+    }
+    .relatedCommendtins ul{
+        margin: 0;
+    }
+    .relatedCommendtin{
+        width: 100%;
+        height: 70px;
+        margin: 10px 0;
+        padding: 0 10px 0 0;
+        position: relative;
+        left: -10%;
+        /*border-bottom: 1px solid rgb(163, 163, 163)*/
+    }
+    .relatedCommendtin-left{
+        width: 30%;
+        height:70px;
+        float: left;
+    }
+    .relatedCommendtin-left img{
+        width: 100%;
+        margin: 5px 0;
+    }
+    .relatedCommendtin-right{
+        width: 70%;
+        height:70px;
+        display: inline-block;
+        position: relative;
+        right: -10%;
+        border-bottom: 1px solid rgb(163, 163, 163);
+    }
+    .t-t{
+        height:50px;
+    }
+    .r-c-r{
+        /*margin: 7px 0 0 0;*/
+        font-size: 12px;
+        height:20px;
+        font-weight: bold;
+        color: #C7C7C7;
+    }
+    .newdate{
+        position: relative;
+        float: right;
+    }
+/*新闻详情*/
+
+/*订阅房源详情*/
+    #houseScription{
+        margin:50px 0 0 0;
+    }
+    #houseScription img{
+        width: 100%;
+    }
+    #houseScription .houseIntro{
+        width: 100%;
+        height: 40px;
+        padding: 10px;
+        background-color: white;
+    }
+    #houseScription>ul>li{
+        display: inline-block;
+        float: left;
+        text-align: center;
+        margin: 0 -10px 0 0;;
+    }
+    .three{
+        width: 100%;
+        height: 70px;
+        padding: 30px auto 10px;
+        vertical-align: middle;
+        background-color: white;
+        border-top: 1px solid rgb(242.242,242);
+        border-bottom: 1px solid rgb(242.242,242);
+    }
+    .three>div{
+        display: inline-block;
+        width: 31%;
+        text-align: center;
+        margin: 15px auto 10px;
+        padding: 15px auto;
+    }
+    .three>div:nth-child(2){
+        border-left: 1px solid rgb(242.242,242);
+        border-right: 1px solid rgb(242.242,242);
+    }
+    .three article:nth-child(2){
+        color: red;
+    }
+    #houseScription>.area{
+        width: 100%;
+        height: 40px;
+        margin: 5px auto;
+        padding: 10px;
+        background-color: white;
+    }
+    #houseScription>.area span:nth-child(2){
+        float: right;
+    }
+    #houseScription>.area img{
+        width: 20px;
+        height: 20px;
+    }
+    #houseScription>.area span:nth-child(1):before{
+        content: '楼盘：';
+    }
+    .houscCall{
+        width: 100%;
+        display: inline-block;
+        float: left;
+        background-color: white;
+    }
+    .houscCall img{
+        width: 70px;
+        height: 70px;
+        margin: 5px -10px 0;
+    }
+    .houscCall>div{
+        display: inline-block;
+        float: left;
+        width: 50%;
+    }
+    .houscCall>div:nth-child(1){
+        width: 5%;
+    }
+    .houscCall>div:nth-child(2){
+        width: 90%;
+    }
+    .houscCall li{
+        margin: 3px;
+        padding: 3px;
+        color: rgb(93,93,93);
+    }
+    .houscCall li a{
+        color: rgb(93,93,93);
+        font-style: normal;
+    }
+/*订阅房源详情*/
+
+/*订阅设置*/
+    #subcriSetting{
+        /*margin: 50px 0 0 0;*/
+    }
+    #subcriSetting .scrstyle{
+        width: 100%;
+        height: 40px;
+        padding: 12px 20px 0;
+        font-size: 16px;
+        display: inline-block;
+        background-color: rgb(242, 242, 242);
+    }
+    #subcriSetting .selectStyle{
+        width: 100%;
+        height: 70px;
+    }
+    #subcriSetting .selectArea{
+        width: 100%;
+        height: 105px;
+        padding:10px 15px;
+    }
+    #subcriSetting .selectarea span{
+        display: inline-block;
+        text-align: center !important;
+        width:23% !important;
+        margin-bottom:10px;
+    }
+    #subcriSetting .selectArea span{
+        width: 23%;
+        height: 30px;
+        padding: 8px 6px 8px 8px;
+        /*margin: 10px 20px;*/
+        text-align: center;
+        /*display: inline-block;*/
+        background-color: rgb(242, 242, 242);
+        font-weight: bold;
+        font-size: 14px;
+    }
+    #subcriSetting .selectarea span:nth-child(5){
+        border: 1px dashed rgb(237, 237, 237);
+        background-color: white;
+        color: rgb(215, 215, 215);
+    }
+    #subcriSetting .scrstyle .rightSelect select{
+        position: relative;
+        float: right;
+        background-color: rgb(242, 242, 242);
+        color: red;
+        border: 1px solid rgb(242, 242, 242);
+        appearance:none;
+    }
+    .spans{
+        display: inline-block;
+        text-align: center !important;
+        width:23.1% !important;
+        margin-bottom: 10px;
+    }
+/*订阅设置*/
+
+/*个人房源-求购*/
+    .detailinfo{
+        font-weight: bold;
+        padding:10px 20px;
+        font-size: 14px;
+        margin:5px 0 0 0;
+        border-bottom: 1px solid #F2F2F2;
+    }
+    .newspaper{
+        display: inline-block;
+        width:70%;
+    }
+    .ad{
+        color: #9F9F9C;
+    }
+    .aa{
+        margin:3px 0;
+    }
+    .ps{
+        float: right;
+        color: red;
+    }
+/*个人房源-求购*/
+
+/*通讯录*/
+    #maillist{
+        width:100%;
+        /*padding:70px 0 0 0;*/
+    }
+    .maillist h3{
+        font-size: 20px !important;
+        padding-top: 15px;
+    }
+    #maillist .mailsearch{
+        text-align: center;
+        padding:0 20px;
+        background-color: rgb(227, 227, 227);
+    }
+    #maillist .mailsearch input{
+        width:100%;
+        margin:10px 0;
+        height: 30px;
+        border:none;
+        text-indent:50%;
+        border-radius: 5px;
+    }
+    #maillist .sectionSelect{
+        width:100%;
+        height:45px;
+        background-color: rgb(255,255,255);
+        margin:10px 0;
+        text-align: center;
+    }
+    #maillist .sectionSelect span{
+        display: inline-block;
+        float: left;
+    }
+    #maillist .sectionSelect .sectionname{
+        text-align: center;
+        padding:15px 0;
+        position: relative;
+        left:25%;
+    }
+    #maillist .sectionSelect img{
+        width:50px;
+        height:50px;
+    }
+    #maillist .sectionSelect .right{
+        float: right;
+    }
+    .mailname{
+        width:100%;
+    }
+    .mailname .apalth{
+        width:100%;
+        display: inline-block;
+        margin:-10px 0 0 0;
+        padding:10px 20px;
+        background-color: #F2F2F2;
+    }
+    .mailname .choosename{
+        width:100%;
+        height:63px;
+        margin:0 0 3px 0;
+        padding:0 20px;
+        background-color: rgb(255,255,255);
+    }
+    .choosename span{
+        width:20%;
+        height:60px;
+    }
+    .choosename span img{
+        width:40px;
+        height:60px;
+    }
+    .choosename .mailinfo{
+        width:80%;
+        height:60px;
+        display: inline-block;
+        float: right;
+        padding:10px 0;
+        background-color: rgb(255,255,255);
+    }
+    .pername{
+        width:100%;
+    }
+    .choosename .mailinfo article{
+        /*margin:3px 0;*/
+        padding:3px 0;
+    }
+/*通讯录*/
+
+/*公司部门*/
+    #department{
+        width:100%;
+    }
+    #department .mailsearch{
+        margin:5px 10px;
+        background-color: rgb(242, 242, 242);
+    }
+    #department .mailsearch input{
+        margin:10px 10px 0;
+        height: 30px;
+        border:none;
+        text-indent:50%;
+        border-radius: 5px;
+    }
+    .departments{
+        margin:10px 0;
+    }
+    #departments .sectionSelect{
+        width:100%;
+        height:45px;
+        background-color: rgb(255,255,255);
+        margin:10px 0 0 0;
+        text-align: center;
+    }
+    #departments .sectionSelect span{
+        display: inline-block;
+        float: left;
+    }
+    #departments .sectionSelect .sectionname{
+        padding:15px 0;
+        position: relative;
+        left:2%;
+    }
+    #departments .sectionSelect img{
+        width:50px;
+        height:50px;
+    }
+    #departments .sectionSelect .right{
+        float: right;
+    }
+    #departments .departmentnumber{
+        padding:15px 0;
+        position: relative;
+        left:60%;
+        text-align: center;
+    }
+/*公司部门*/
+
+/*销售部*/
+    #departmentMailList{
+        margin:13px 0 0 0;
+    }
+/*销售部*/
+
+/*经纪人详情*/
+    #manList .topbar{
+        width:100%;
+        position: relative;
+        height:217px;
+        background: url("../image/manDetail.png");
+        background-size:cover;
+        -webkit-background-size:cover;
+        -moz-background-size:cover;
+    }
+    #manList .topbar img{
+        width:100%;
+    }
+    #manList .topbar .backpic{
+        display: block;
+        position: absolute;
+        top:-40px;
+        left:-20px;
+        width:100px;
+        height:100px;
+        /*background-image: url("../image/back.png");*/
+    }
+    #manList .topbar .backpic img{
+        /*position: absolute;*/
+        /*top:70px;*/
+        /*width:70px;*/
+        /*height:25px;*/
+    }
+    #manList .topbar .avatar{
+        display: inline-block;
+        width:80px;
+        height:80px;
+        position: relative;
+        top:-130px;
+        right:-70%;
+        /*background: url("../image/avatar2.png");*/
+    }
+    #manList .manTel{
+        padding:10px 0;
+    }
+    #manList .manTel .telNumber{
+        display: inline-block;
+        float: right;
+        position: relative;
+        /*right:10%;*/
+        height:50px;
+        padding:10px 20px 0 7px;
+        font-size: 30px;
+        color: rgb(48,48,48);
+    }
+    #manList .manTel .telNumber .space{
+        display: inline-block;
+        width:10px;
+    }
+    #manList .lianxi{
+        width:100%;
+        background-color: rgb(255,255,255);
+        padding:17px 0;
+        font-size: 17px;
+        margin-bottom: 2px ;
+    }
+    #manList .lianxi1{
+        padding:0 0 0 20px;
+    }
+    #manList .lianxi2{
+        float: right;
+        padding:0 20px 0 0 ;
+    }
+    #manList .his{
+        width:100%;
+    }
+    #manList .sohis{
+        display: inline-block;
+        float: left;
+        width:45%;
+        height: 130px;
+        margin:10px 0;
+        background-color: rgb(255,255,255);
+    }
+    #manList .hishouseorigin{
+        margin:10px 7px 0 10px;
+    }
+    #manList .hiscustomerorigin{
+        margin:10px 10px 0 7px;
+    }
+    #manList .hispic img{
+        width:50px;
+        height:30px;
+        margin:35px 55px 10px;
+    }
+    #manList .sohis .on{
+        color: red;
+    }
+    #manList .sohis .hison{
+        position: relative;
+        left:25%;
+    }
+    .manlistinfo{
+        font-weight: bold;
+    }
+    .manlistinfo .address,.company{
+        margin: 7px 0;
+    }
+    .manlistname{
+        /*font-weight: bold;*/
+        padding: 5px 0;
+    }
+    .manlistname .small{
+        color: white;
+    }
+/*经纪人详情*/
+
+/*看房协议-全部*/
+    .houseagreementTop{
+        /*width:140px;*/
+        border:1px solid rgb(229,229,229);
+        padding:1px 1px;
+        border-radius: 15px;
+        display: inline-block;
+        height:34px;
+        margin: 9px 0;
+    }
+    .houseagreementTop2{
+        /*height:50px;*/
+        /*position: relative;*/
+        /*top:-10px;*/
+    }
+    .houseagreementTop2 h4{
+        position: relative;
+        top:6px;
+        margin:0;
+        font-size: 16px;
+        height:50px;
+    }
+    .pagechange{
+        /*height:20px;*/
+        /*margin:15px 0;*/
+    }
+    #item1mobile{
+        position: relative;
+        top:-5px;
+        padding: 2px 10px;
+        font-size: 20px;
+    }
+    .houseagreementTopAll{
+        color: rgb(245,245,245);
+        display: inline-block;
+        padding:5px 20px;
+        height:30px;
+        margin:0 0 0 0;
+        border:1px solid rgb(229,229,229);
+        border-radius: 15px;
+        background-color: rgb(2,169,245);
+    }
+    .pagechange{
+        color: rgb(245,245,245);
+        display: inline-block;
+        padding:5px 20px;
+        height:30px;
+        margin:0 0 0 0;
+        border:1px solid rgb(229,229,229);
+        border-radius: 15px;
+    }
+    .off{
+        background: #E0E2EB;
+        color: #02AAF2;
+        font-weight: bold
+    }
+    .houseagreementTopDrafts{
+        display: inline-block;
+        padding:5px 14px 5px 8px;
+    }
+    .haaTop{
+        font-weight: bold;
+        height: 40px
+    }
+    .hg{
+        margin:5px 0;
+    }
+    #houseagreementall{
+        width:100%;
+        position: relative;
+        padding:70px 0 0 0;
+    }
+    #houseagreementall .searchAgreement{
+        width:100%;
+        padding:20px 10px 0;
+        background-color: rgb(229,229,229);
+    }
+    #houseagreementall .searchAgreement input{
+        width:100%;
+        height:30px;
+        border:none;
+        border-radius: 5px;
+        /*text-indent: 100px;*/
+        text-align: center;
+    }
+    #houseagreementall .searchAgreement input[placeholder]{
+        font-size: 14px;
+    }
+    .agreementname{
+        font-size: 14px;
+    }
+    #houseagreementall i{
+        position: relative;
+        left:23%;
+        top:-34px;
+        font-size: 21px;
+        color: #E5E5E5;
+    }
+    #houseagreementall .houseagreements{
+        padding:10px 15px;
+    }
+    #houseagreementall .houseagreements .houseagreement{
+        width:100%;
+        height:100px;
+    }
+    .houseagreement-left {
+        width:30%;
+        height:100px;
+        display: inline-block;
+        float: left;
+    }
+    .houseagreement-right{
+        display: inline-block;
+        width:70%;
+        height:100px;
+        padding:0 0 0 15px;
+    }
+    .houseagreement .houseagreement-left img{
+        width:100%;
+    }
+    sub{
+        color: rgb(151,151,151);
+    }
+    .agreementadd{
+        font-size: 12px;
+        font-weight: bold;
+    }
+    .a-a{
+        font-size: 10px;
+        color: #BEBEBE;
+    }
+    .zhongjianren{
+        position: relative;
+        float: right;
+        color: rgb(179,179,179);
+    }
+    .dd{
+        line-height: 140%;
+    }
+    .mui-radio{
+        width:14px;
+        height:14px;
+        border:none;
+    }
+    .forIn{
+        width:100%;
+        /*height:9%;*/
+        position: absolute;
+        bottom:20px;
+        padding:10px 0 15px;
+        /*margin-bottom: 10px;*/
+        background-color: white;
+        z-index: 999;
+    }
+    .forin{
+        background-color: #02AAF2;
+        color: white;
+        font-weight: bold;
+        margin:5px 15px;
+        text-align: center;
+        vertical-align: middle;
+        padding:12px ;
+        border-radius: 10px;
+        font-size: 16px;
+    }
+/*看房协议-全部*/
+
+/*看房协议-草稿箱*/
+    .houseagreementTop3 .houseagreementTopDrafts{
+        color: rgb(245,245,245);
+        display: inline-block;
+        padding:5px 20px 5px 20px;
+        margin:0 0 0 0;
+        border:1px solid rgb(229,229,229);
+        border-radius: 14px;
+        background-color: rgb(2,169,245);
+    }
+    .houseagreementTop3 .drafts{
+        display: inline-block;
+        padding:5px 16px 5px 10px;
+    }
+    .houseagreementTop3 .drafts{
+        display: inline-block;
+        padding:5px 20px 5px 20px;
+        margin:0 0 0 0;
+        border:1px solid rgb(229,229,229);
+        border-radius: 14px;
+    }
+    #aggrement{
+
+    }
+/*看房协议-草稿箱*/
+
+/*委托购房协议书*/
+    #agreement{
+        padding:70px 20px 10px;
+        background-color: white;
+    }
+    #agreement>article{
+        line-height: 150%;
+        font-size: 13px;
+        margin:10px 0;
+    }
+    #agreement .checkbox{
+        width:13px;
+        height:13px;
+    }
+    #agreement .houseadd{
+        /*text-decoration: underline ;*/
+    }
+    #agreement .houseadd:before{
+        content: '房产地址：';
+    }
+    #agreement article form{
+        margin:10px 0;
+    }
+    #agreement ul li{
+        position: relative;
+        left:-40px;
+    }
+    #agreement .infos{
+        margin:20px 0;
+    }
+    .agreeinfo{
+        background-color: #F2F2F2;
+    }
+    #agreement .qianzi{
+        height:14px;
+        width:70%;
+        border:none;
+    }
+    #agreement ul li:nth-child(1):before{
+        content: '委托人：';
+    }
+    #agreement ul li:nth-child(2):before{
+        content: '电话：';
+    }
+    #agreement ul li:nth-child(3):before{
+        content: '身份证号码：';
+    }
+    #agreement ul li:nth-child(4):before{
+        content: '联系地址：';
+    }
+    #agreement ul li:nth-child(5):before{
+        content: '委托日期：';
+    }
+    #agreement ul li:nth-child(6):before{
+        content: '委托人签字：';
+        display: inline-block;
+        float: left;
+    }
+/*委托购房协议书*/
+
+/*跟进管理-房源跟进*/
+    .supplyfollows{
+        /*margin:50px 0 0 0;*/
+        padding:70px 20px 10px;
+    }
+    .ul-ul{
+        margin:0;
+        height:180px;
+    }
+    .supplyfollows .ul-li{
+        width:100%;
+        padding:10px 0;
+        border-bottom: 1px solid #B7B7B7;
+    }
+    .supplyfollows .li-li{
+        line-height: 200%;
+        height:30px!important;
+        margin:0;
+    }
+    .supplyfollows .li-li .strength{
+        border:1px solid #F29094;
+        color:  #F29094;
+        font-size: 11px;
+        margin:0 2px 0 5px;
+        padding:1px 9px;
+    }
+    .supplyfollows .li-li .telphone{
+        border:1px solid #BCDDED;
+        color: #BCDDED;
+        font-size: 11px;
+        margin:0 5px 0 2px;
+        padding:1px 5px;
+    }
+    .supplyfollows .li-li .buildtime{
+        display: inline-block;
+        float: right;
+        font-size: 11px;
+        color: #B2B2B2;
+    }
+    .supplyfollows .genjinjieshao{
+        padding:8px 0;
+        font-size: 14px!important;
+        width:100%;
+        /*height:50px;*/
+    }
+    .yezhuname{
+        font-size: 16px;
+    }
+    .supplyfollows .miaoshu{
+        padding:10px 10px;
+        height:90px;
+        background-color: rgb(240,240,240);
+    }
+    .supplyfollows .miaoshu .img{
+        width:30%;
+        height:70px;
+        display: inline-block;
+        float: left;
+    }
+    .supplyfollows .miaoshu .img img{
+        width:100%;
+    }
+    .supplyfollows .miaoshu .imgmiaoshu{
+        width:70%;
+        display: inline-block;
+        font-size: 13px;
+        float: left;
+        line-height: 110%;
+        color: #B7B7B7;
+        padding:0 0 0 4px;
+    }
+    .supplyfollows .miaoshu .imgmiaoshu p{
+        margin:2px;
+        width:100%;
+    }
+    .supplyfollows .imgmiaoshu p span{
+        margin:0 5px 0 0 ;
+    }
+    .supplyfollows .imgmiaoshu p:nth-child(2){
+        font-size: 10px;
+    }
+    .supplyfollows .imgmiaoshu p:nth-child(3){
+        font-size: 10px;
+    }
+    .supplyfollows .imgmiaoshu p:nth-child(4){
+        font-size: 10px;
+    }
+    .yaoshi{
+        border:1px solid #B7B7B7;
+        padding:1px 2px;
+    }
+    .addmiaoshu{
+        font-size: 12px;
+    }
+    .supplyfollows .imgmiaoshu .priceright{
+        position: relative;
+        float: right;
+        font-size: 13px;
+    }
+/*跟进管理-房源跟进*/
+
+/*房源详情*/
+    .tianjiaicon img{
+        width:16px !important;
+        height:16px !important;
+        position: relative;
+        top:7px;
+    }
+    #housedetail{
+        /*margin:50px 0 0 0;*/
+        padding:70px 0 0 0;
+        background-color: #ffffff;
+    }
+    #housedetail in{
+        margin:0 5px 0 3px;
+    }
+    .huxingjieshao{
+        /*border:1px solid #B7B7B7;*/
+        height:100px;
+    }
+    .huxingjieshao>div{
+        display: inline-block;
+        float: left;
+        width:33.3%;
+        text-align: center;
+        margin: 0;
+        padding: 10px 0;
+    }
+    #housedetail .huxingjieshao ul{
+        text-align: center;
+    }
+    #housedetail .huxingjieshao ul:nth-child(2){
+        border-left:1px solid #B7B7B7;
+    }
+    #housedetail .huxingjieshao ul:nth-child(3){
+        border-left: 1px solid #B7B7B7;
+    }
+    #housedetail .huxingjieshao .qiangdiaose{
+        color: #EF9698;
+        margin:0;
+    }
+    #housedetail .housedetailinfos ul{
+        padding:0 15px 10px;
+        margin:auto;
+        /*position: relative;*/
+        /*left:-10px;*/
+    }
+    #housedetail .housedetailinfos ul li{
+        padding:10px 10px;
+        width:100%;
+        font-size: 14px;
+    }
+    #housedetail .housedetailinfos>ul>li{
+        border-bottom: 1px solid #DDD;
+    }
+    #housedetail .housedetailinfos ul>li span{
+        width:50%;
+        display: inline-block;
+    }
+    #housedetail .rightinfos{
+        position: relative;
+        /*left:70px;*/
+    }
+    #housedetail .MortgageCalculator{
+        border:1px solid #B7B7B7;
+        position: relative;
+        float: right;
+        padding:1px 2px;
+    }
+    #housedetail .rightformale{
+        /*left:100px;*/
+    }
+    #housedetail .li-img{
+        width:15px;
+        height:15px;
+        margin:0 15px 0 0;
+    }
+    #housedetail .you{
+        position: relative;
+        float: right;
+    }
+    #housedetail .you img{
+        width:25px;
+        height:25px;
+    }
+    #housedetail .jingjirenjieshao{
+        height:70px;
+    }
+    #housedetail .jingjiren{
+        width:60px;
+        height:60px;
+        margin:5px auto;
+        border:1px solid #ffffff;
+        border-radius: 50% !important;
+    }
+    #housedetail .jingjiren img{
+        width:100%;
+        position: relative;
+        border-radius: 50%;
+        top:-10px;
+    }
+    #housedetail .name-tel{
+        position: relative;
+        /*top:-10px;*/
+        left:10%;
+    }
+    #housedetail .name-tel p{
+        padding:0;
+        margin:6px 0;
+    }
+    #housedetail .jingjiren,.name-tel{
+        display: inline-block;
+        float: left;
+    }
+    #housedetail .jjrtitle{
+        background-color: #F2F2F2;
+    }
+    #housedetail .jjrtitle jl{
+        position: relative;
+        left:10px;
+    }
+    #housedetail .youlast{
+        position: relative;
+        top:10px;
+    }
+/*房源详情*/
+
+/*sourceselect选择框*/
+    #sourceselect{
+        /*margin: 50px 0 0 0;*/
+        top:50px;
+        padding:20px 15px 0;
+        position: fixed;
+        width:100%;
+        border-bottom: 1px solid #F2F2F2;
+        z-index: 999;
+        background-color: white;
+    }
+    #sourceselect .select-top{
+        display: inline-block;
+        float: left;
+        width:20%;
+        /*height:40px;*/
+        padding:10px 5px;
+        text-align: center;
+    }
+    #sourceselect .select-title{
+        font-size: 14px;
+        padding:-10px 0 10px 0;
+    }
+/*sourceselect选择框*/
+
+    .mui-control-content {
+        background-color: white;
+        min-height: 640px;
+    }
+
+    .mui-control-content .mui-loading {
+        position: relative;
+        top:100px;
+        margin-top: 150px;
+    }
+
+/*房源管理-出售*/
+    #top3 .myso{
+        width:36px;
+        height:13px;
+        position: relative;
+        left:-30px;
+        top:7px;
+    }
+    .IM-add{
+        width:16px !important;
+        height:16px !important;
+        position: relative;
+        top:3px;
+    }
+    .IMtop2{
+        /*top:-5px !important;*/
+    }
+    .myhouse{
+        position: relative;
+        top:3px;
+    }
+    #Inventorymanagement{
+        width:100%;
+        padding:120px 0 0 0;
+    }
+    .im-housedetail{
+        padding:0 15px;
+        margin:7px auto;
+        width:100%;
+        height:90px;
+        border-bottom: 1px solid #F2F2F2;
+    }
+    .im{
+        display: inline-block;
+        float: left;
+        padding:10px 5px;
+    }
+    .imhousedetail-left{
+        width:30%;
+        float: left;
+    }
+    .imhousedetail-left img{
+        height:70px;
+    }
+    .imhousedetail-right{
+        width:70%;
+        line-height: 105%;
+        height: 90px;
+    }
+    .ir1{
+        font-size: 13px;
+        padding:0 !important;
+        font-weight: bold;
+    }
+    .ir4{
+        height:20px;
+    }
+    .ir4s{
+        font-size: 12px;
+      }
+    .ir4 .yaoshi{
+        font-size: 9px;
+        border:1px solid #80D4FA;
+        color: #80D4FA;
+        padding:0;
+    }
+    /*.ir1, .ir2, .ir3, .ir4{*/
+        /*height:;*/
+    /*}*/
+    .ir2{
+        color: #646464;
+    }
+    .ir3{
+        color: #AAA;
+    }
+    .ir{
+        font-size: 10px;
+        line-height: 150%;
+    }
+    .im-pr{
+        text-align: right;
+        display: inline-block;
+        font-weight: bold;
+        float: right;
+        color: #EA585E;
+        font-size: 14px;
+    }
+    .sort{
+        position:fixed;
+        bottom:50px;
+        right:25px;
+        z-index: 99;
+    }
+    .positionadd{
+        display: none;
+        position: absolute;
+        width: 100%;
+        background-color: white;
+        /*padding-left: 10px;*/
+        top: 110px;
+        left: 0;
+        /*height: 190px;*/
+        border-bottom: 1px solid #dcdcdc;
+        z-index: 100;
+    }
+    .positionmiddle{
+        position: relative;
+    }
+    .positionadd1{
+        width: 33.3%;
+        overflow-x: hidden;
+        height: 200px;
+        position: relative;
+        /*top:120px;*/
+        overflow-y: auto;
+        float: left;
+    }
+    .posAdd{
+        line-height: 30px;
+        font-size: 14px;
+        color: #000000;
+        padding: 0 10px;
+        background-color: white !important;
+        border-top: 1px solid #8f8f8f;
+        border-bottom: 1px solid #F2F2F2;
+    }
+    .choosemore{
+        display: block;
+        font-size: 14px;
+        color: #000000;
+        padding: 0 10px;
+        background-color: white !important;
+        border-bottom: 1px solid #F2F2F2;
+        /*margin-bottom: 5px;*/
+        /*height:100px;*/
+    }
+    .cmspan{
+        padding:3px 10px;
+        width:23.3%;
+        border:1px solid gray;
+        /*display: inline-block;*/
+        float: left;
+        margin:4px 2px;
+        font-size: 10px;
+    }
+    .p{
+        padding-left: 15px;
+    }
+    .tdl{
+        font-size: 8px;
+    }
+    .sx{
+        height:120px;
+    }
+    .xx{
+        height:80px;
+    }
+    .k{
+        padding:0 15px;
+    }
+    .qc{
+        padding:15px 0;
+        border-top:1px solid #9B9B9B;
+        border-bottom: 1px solid #9B9B9B;
+    }
+    .cc{
+        width:100%;
+        padding:8px 15px;
+    }
+    .sure{
+        padding: 5px 25px;
+    }
+    .sure button{
+        font-size: 16px;
+        color: white;
+        font-weight: bold;
+    }
+    .selectfix{
+        width:100%!important;
+        position: fixed;
+        bottom:0;
+    }
+    .selectmid{
+        height: 800px;
+        overflow: hidden;
+    }
+    .hidshow{
+        position: fixed;
+        left: 0;
+        top: 0;
+        display: none;
+        width: 100%;height: 100%;
+        background-color: gray;
+        /*color: #000000;*/
+        opacity:0.5;
+        z-index: 99;
+        /*background-color: rgba(0,0,0,.3);*/
+        /*color: #000000;*/
+        /*opacity:0.5;*/
+        /*z-index: 666;*/
+    }
+    .mask-backdrop{
+        /*position: fixed;*/
+        /*top: 0;*/
+        /*right: 0;*/
+        /*bottom: 0;*/
+        /*left: 0;*/
+        /*z-index: 998;*/
+        /*background-color: rgba(0,0,0,.3);*/
+    }
+    .chooseStyle{
+        width: 100%;
+        height:260px;
+    }
+    .choosePrice{
+        width: 100%;
+        height: 200px;
+    }
+    .chooseHouse{
+        height: 200px;
+    }
+    
+/*房源管理-出售*/
+
+/*房源详情-房源管理*/
+    .hiddentab{
+        position: fixed;
+        top:60px;
+        right:0;
+    }
+    .righthiddentab{
+        padding:10px 40px;
+        text-align: center;
+        background-color: white;
+        border:1px solid #646464;
+        border-radius: 9px;
+        /*background-color: #02a9f5;*/
+        /*border-top-left-radius: 9px;*/
+        /*border-bottom-left-radius: 9px;*/
+    }
+    .righthiddentab:nth-child(2){
+        margin-bottom: 1px;
+    }
+    .righthiddentab:nth-child(2){
+        margin-top: 1px;
+    }
+    .houseimg img{
+        width:100%;
+    }
+    #openPopover img{
+        width: 16px !important;
+        height: 16px !important;
+    }
+/*房源详情-房源管理*/
+
+/*国贸蓝海楼盘详情*/
+    .infosspan{
+
+    }
+    .loupanziti{
+        padding:-10px 10px 15px;
+        font-size: 16px;
+    }
+    .sp1:before{
+        content:'物业费：';
+        color: #BDBDBD;
+    }
+    .sp2:before{
+        content:'房屋总数：';
+        color: #BDBDBD;
+    }
+    .sp3:before{
+        content:'容积率：';
+        color: #BDBDBD;
+    }
+    .sp4:before{
+        content:'建筑时间：';
+        color: #BDBDBD;
+    }
+    .sp5:before{
+        content:'绿化率：';
+        color: #BDBDBD;
+    }
+    .sp6:before{
+        content:'建筑类型：';
+        color: #BDBDBD;
+    }
+    .sp7:before{
+        content:'产权情况：';
+        color: #BDBDBD;
+    }
+/*国贸蓝海楼盘详情*/
+
+/*国贸阳光*/
+
+/*国贸阳光*/
+
+/*房源跟进记录*/
+    .followRecords{
+        /*margin:50px 0 0 0;*/
+        width:100%;
+        /*padding:10px 20px;*/
+        /*background-color: #F8F8F8*/
+    }
+    .followRecord{
+        width:100%;
+        padding:15px 20px;
+    }
+    .fr{
+        display: block;
+    }
+    .fr .strength{
+        border:1px solid #F29094;
+        color:  #F29094;
+        font-size: 11px;
+        margin:0 2px 0 5px;
+        padding:1px 9px;
+    }
+    .fr .telphone{
+        border:1px solid #BCDDED;
+        color: #BCDDED;
+        font-size: 11px;
+        margin:0 5px 0 2px;
+        padding:1px 5px;
+    }
+    .fr .first-right{
+        display: inline-block;
+        float: right;
+    }
+    .second-tab{
+        padding:5px 0;
+    }
+    .third-tab .date{
+        position: relative;
+        float: right;
+    }
+/*房源跟进记录*/
+
+/*房源跟进*/
+    .housefollows{
+        width:100%;
+        /*margin:50px 0 0 0;*/
+    }
+    .housefollow{
+        padding:11px 20px;
+        border-bottom: 1px solid #F8F8F8;
+    }
+    .housefollow .con1:before{
+        content: '跟进员工:';
+    }
+    .housefollow .con2:before{
+        content: '时间:';
+    }
+    .housefollow .con3:before{
+        content: '意向:';
+    }
+    .housefollow .con4:before{
+        content: '方式:';
+    }
+    .housefollow .con-right{
+        position: relative;
+        float: right;
+    }
+    .con-te{
+        border:none;
+    }
+    .con5-te textarea{
+        margin-top: 10px;
+        padding:20px 20px;
+        width:100%;
+        background-color: #F8F8F8;
+        border:none;
+    }
+    .con-img{
+        position: relative;
+        top:3px;
+        width:20px;
+        height:40px;
+    }
+/*房源跟进*/
+
+/*修改房源*/
+    .edithousesource{
+        width:100%;
+        /*margin:50px 0 0 0;*/
+    }
+    .xinxititle{
+        background-color: #F2F2F2;
+        padding:7px 20px;
+    }
+    .yezhuinfos{
+        padding:10px 20px;
+        border-bottom: 1px solid #F8F8F8;
+    }
+    .yezhuinfos input{
+        width:85%;
+        height:30px;
+        text-align: right;
+        border:none;
+    }
+    .load input{
+        margin:0 3px;
+        border:1px solid #F2F2F2;
+    }
+    .louceng input{
+        width:15%;
+        border:1px solid #F2F2F2;
+        /*float: right;*/
+        margin:0 3px;
+    }
+    .louceng .floorright{
+        position: relative;
+        left:45%;
+    }
+    .yzinfosImg{
+        position: relative;
+        top:2px;
+        /*float: right;*/
+    }
+    .yzinforight{
+        position: relative;
+        float: right;
+    }
+    .beizhu textarea{
+        border:1px solid #F2F2F2;
+    }
+    .housepics{
+        margin:20PX;
+    }
+    .housepic{
+        width:100px;
+        height:100px;
+        /*padding:10px;*/
+        /*margin:0;*/
+        display: inline-block;
+    }
+    .housepic img{
+        width:100px;
+        height: 100px;
+    }
+    .housepic3{
+        border:2px dashed #F2F2F2;
+        /*position: relative;*/
+        /*top:20px;*/
+    }
+    .housepic3 img{
+        /*margin:25px;*/
+    }
+/*修改房源*/
+
+/*看房*/
+    .inspection{
+        margin:50px 0 0 0;
+    }
+    .fillinfo{
+        padding:9px 20px;
+        border-bottom: 1px solid #F2F2F2;
+    }
+    .fillinfo input{
+        width:100%;
+        text-align: left;
+        margin-top: 5px;
+        height:30px;
+        border:none;
+    }
+    .fillinfo input[placeholder]{
+        font-weight: bold;
+    }
+    .fillinfo .gender{
+        border:1px solid #80D4FA;
+        padding:2px 5px;
+        margin:0 3px;
+        color: #80D4FA;
+    }
+    .fillInfos button{
+        width:100%;
+        height:50px;
+        background-color: #02AAF5;
+        position: fixed;
+        bottom:0;
+    }
+/*看房*/
+
+/*房贷计算器*/
+    .calculator{
+        /*padding-top:70px;*/
+    }
+    .cal{
+        margin:0 5px;
+        padding:10px 0;
+    }
+    .cal:nth-child(1){
+        border-bottom: 3px solid #02AAF2;
+    }
+    .calcu{
+        width:100%;
+        border:1px solid #F2F2F2;
+        padding:0 15px;
+        background-color: white;
+    }
+    .be-in{
+        width:40%;
+        font-size: 18px;
+        font-weight: bold;
+        color: #A9A9A9;
+        display: inline-block;
+        padding-top: 11px;
+    }
+    .calcu .span-input{
+        height:40px;
+        width:60%;
+        display: inline-block;
+    }
+    .span-input input{
+        width:100%;
+        height:40px;
+        border:none !important;
+    }
+    .span-input input[placeholder]{
+        color: #02AAF2;
+        font-weight: bold;
+        font-size: 17px;
+        text-align: right;
+    }
+    .calcu .total{
+        display: block;
+        text-align: center;
+        padding:5px 15px;
+        font-size: 18px;
+        color: white;
+        background-color: #02AAF2;
+        padding:16px 0;
+    }
+    .mortgage{
+        display: inline-block;
+        float: left;
+        width:49%;
+        color: black;
+        padding:10px 15px;
+        border-bottom: 1px solid #F2F2F2;
+    }
+    .mortgage h3{
+        color: #02AAF2;
+        font-size: 20px;
+    }
+    .showcal{
+        border-bottom: none;
+    }
+    .averagemonth{
+        display: block;
+        width:100%;
+        /*padding:10px 15px;*/
+    }
+/*房贷计算器*/
+
+/*朝向*/
+    .aspect{
+        margin:50px 0 0 0;
+    }
+    .aspect .list label{
+        /*margin:0 15px;*/
+        border-left: none;
+        border-right: none;
+        border-bottom: 300px;
+    }
+    .item-content{
+        height:50px;
+        padding:5px 0;
+    }
+/*朝向*/
+
+/*客员管理-求购*/
+    .askToBuyInfos{
+        font-weight: bold;
+        font-size: 14px;
+        height:20px;
+        padding:0 0 6px;
+    }
+    .askToBuyInfos span{
+        margin-right: 5px;
+    }
+    .ask-to-buy{
+        /*height:40px;*/
+    }
+    .ask-to-buy h3{
+        margin:3px 0;
+    }
+    .hopeAdd .add{
+        font-size: 12px;
+        padding:0 0 8px;
+    }
+    .sourceR{
+        display: inline-block;
+        font-weight: bold;
+        float: right;
+        color: #EA585E;
+        font-size: 14px;
+        padding:6px 0 0;
+    }
+/*客员管理-求购*/
+
+/*登记房源*/
+    .perproAdd[placeholder]{
+        text-align: center;
+    }
+    .houseType input{
+        width:15% !important;
+    }
+    .perinput input{
+        border:1px solid #BBBBBB;
+    }
+    .perbz textarea{
+        border:1px solid #BBBBBB;
+    }
+/*登记房源*/
+
+/*客源管理-求租-添加求租*/
+    .addRent-input input[placeholder]{
+        text-align: left;
+        padding:0 0 0 5px;
+    }
+    .addRent-area{
+        position: relative;
+        float: right;
+    }
+/*客源管理-求租-添加求租*/
+
+/*个人信息*/
+    #infos{
+        background-color: #35343A;
+        width:100%;
+        height: 170px;
+    }
+    .infoTop{
+        width: 100%;
+    }
+    #LI{
+        width:50px;
+        height:50px;
+        display: inline-block;
+        position: absolute;
+        top:-15px;
+        left:0;
+    }
+    .abefo{
+        width:100%;
+        /*border-radius: 50%;*/
+        /*width: 100px;*/
+        /*height: 100px;*/
+        /*display: inline-block;*/
+        /*background-color: red;*/
+        /*position: relative;*/
+        /*margin: 0 20px;*/
+    }
+    .avaLogo{
+        border-radius: 50%;
+        width: 100px;
+        height: 100px;
+        display: inline;
+        position: relative;
+        margin: 0 20px;
+    }
+    .infodetail{
+        padding: 10px 15px;
+        color: #B4B4B4;
+    }
+    .inde{
+        font-size: 20px;
+        color: #484848;
+    }
+    .infoname{
+        text-align: center;
+        color: white;
+        font-weight: bold;
+    }
+/*个人信息*/
+
+/**/
+    #xiagao{
+        width: 70px;
+        height: 70px;
+        background-color: #35BAF7;
+        border-radius: 50%;
+        position: relative;
+        left:30px;
+    }
+    #xiagao2{
+        width: 35px;
+        height: 35px;
+        border-radius: 0 0 35px 0;
+        position: relative;
+        /*left:30px;*/
+        transform: rotate(180deg);
+        background-color: #02A9F5;
+        clip:rect(0px,10px,50px,0px);
+    }

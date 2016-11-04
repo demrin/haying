@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="telephone=no" name="format-detection">
+    <meta content="email=no" name="format-detection">
+    <title>房源详情</title>
+    <link rel="stylesheet" href="../css/ceshi.css">
+    <link rel="stylesheet" href="../js/MUI/mui.min.css">
+</head>
+<body>
+<div id="top" style="background-color: white">
+    <div id="top1" onclick="goBack()">
+        <img src="../image/left.png" alt="">
+    </div>
+    <div id="top2" style="position:relative;top: -20px;">
+        <h3 style="font-size: 20px">房源详情</h3>
+    </div>
+    <div id="top3" class="tianjiaicon" onclick="">
+        <img src="../image/+icon.png" alt="" style="position:relative;top: 8px;width: 16px!important;height: 16px!important;">
+    </div>
+</div>
+<div id="housedetail">
+
+    <div id="slider" class="mui-slider" style="height: 235px">
+        <div class="mui-slider-group mui-slider-loop">
+            <div class="mui-slider-item mui-slider-item-duplicate">
+                <a href="#">
+                    <img style="width: 100%;" src="../image/perHousePic.png" >
+                </a>
+            </div>
+            <div class="mui-slider-item">
+                <a href="#">
+                    <img src="../image/newpic.png" >
+                </a>
+            </div>
+            <div class="mui-slider-item">
+                <a href="#">
+                    <img style="width: 100%;" src="../image/perHousePic.png" >
+                </a>
+            </div>
+            <div class="mui-slider-item">
+                <a href="#">
+                    <img src="../image/newpic.png" >
+                </a>
+            </div>
+            <div class="mui-slider-item">
+                <a href="#">
+                    <img style="width: 100%;" src="../image/perHousePic.png" >
+                </a>
+            </div>
+            <div class="mui-slider-item mui-slider-item-duplicate">
+                <a href="#">
+                    <img src="../image/newpic.png" >
+                </a>
+            </div>
+        </div>
+        <div class="mui-slider-indicator">
+            <div class="mui-indicator mui-active"></div>
+            <div class="mui-indicator"></div>
+            <div class="mui-indicator"></div>
+        </div>
+    </div>
+
+    <div class="housedetailinfos">
+        <ul>
+            <li><strong><in>国贸蓝海</in></strong><strong><in>中庭精装修三房</in></strong><strong><in>户型方正</in></strong><strong><in>南北通透</in></strong></li>
+            <li class="huxingjieshao">
+                <div class="">
+                    <div style="padding: 7px 0;">售价</div>
+                    <div class="qiangdiaose" style="padding: 7px 0;">710万</div>
+                </div>
+                <div class="" style="border-right: 1px solid #F2F2F2;border-left: 1px solid #F2F2F2;">
+                    <div style="padding: 7px 0;">房型</div>
+                    <div class="qiangdiaose" style="padding: 7px 0;">3房2厅</div>
+                </div>
+                <div class="">
+                    <div style="padding: 7px 0;">面积</div>
+                    <div class="qiangdiaose" style="padding: 7px 0;">180㎡</div>
+                </div>
+            </li>
+            <li><span>单价：45019/㎡</span><mc class="MortgageCalculator"><strong>房贷计算器</strong></mc></li>
+            <li><span>首付：330万</span><span class="rightinfos">看房：有匙</span></li>
+            <li><span>楼层：15/16</span><span class="rightinfos">朝向：南北</span></li>
+            <li><span>装修：毛胚房</span><span class="rightinfos">产权：合同</span></li>
+            <li><span>年代：2006年</span><span class="rightinfos">通途：住宅</span></li>
+            <li>来源：来电</li>
+            <li><span>编号：AN1837402</span><span class="rightinfos">委托时间：2016-09-10</span></li>
+            <li><span>楼盘：国贸蓝海</span><you class="you"><img src="../image/you.png" alt=""></you></li>
+        </ul>
+        <ul>
+            <li><span>业主姓名：林晓妮</span><span class="rightinfos rightformale">性别：女</span></li>
+            <li>电话：15823971978</li>
+            <li>备注：房东希望房子能在一个月内卖掉</li>
+        </ul>
+        <ul>
+            <li><img class="li-img" src="../image/img/follow-icon.png" alt="">跟进记录<you class="you"><img src="../image/you.png" alt=""></you></li>
+            <li class="jjrtitle"><jl>所属经纪人</jl></li>
+            <li class="jingjirenjieshao">
+                <div class="jingjiren">
+                    <img src="../image/jr.png" alt="">
+                </div>
+                <div class="name-tel">
+                    <p>陈凯歌</p>
+                    <p>15819237895</p>
+                </div>
+                <you class="you youlast"><img src="../image/you.png" alt=""></you>
+            </li>
+        </ul>
+    </div>
+</div>
+<script src="../script/jquery-1.8.2.min.js"></script>
+<script src="../script/angular.js"></script>
+<script src="../script/anotherPage.js"></script>
+<script src="../script/api.js"></script>
+<script src="../script/tool.js"></script>
+<script src="../script/fastclick.js"></script>
+<script src="../js/MUI/mui.min.js"></script>
+<script>
+    mui.init({
+        swipeBack:true //启用右滑关闭功能
+    });
+    var slider = mui("#slider");
+    slider.slider({
+        interval: 3000
+    });
+</script>
+</body>
+</html>
