@@ -1085,32 +1085,51 @@ html,body{
     }
     #manList .his{
         width:100%;
+        height: 150px;
+        padding: 15px;
+        background-color: #F2F2F2;
     }
     #manList .sohis{
         display: inline-block;
         float: left;
-        width:45%;
-        height: 130px;
-        margin:10px 0;
+        width:47%;
+        height: 120px;
         background-color: rgb(255,255,255);
+        padding: 30px 0;
     }
-    #manList .hishouseorigin{
-        margin:10px 7px 0 10px;
+    #manList .his1{
+        margin-right: 3%;
     }
-    #manList .hiscustomerorigin{
-        margin:10px 10px 0 7px;
+    #manList .his2{
+        margin-left: 3%;
+    }
+    #mainList .sohis:nth-child(2){
+        position: relative;
+        right: 0;
+    }
+    #manList .hispic{
+        width: 100%;
+    }
+    #manList .hispic span{
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+        vertical-align: middle;
     }
     #manList .hispic img{
         width:50px;
         height:30px;
-        margin:35px 55px 10px;
+        text-align: center!important;
+        /*margin:35px 55px 10px;*/
     }
     #manList .sohis .on{
         color: red;
     }
     #manList .sohis .hison{
-        position: relative;
-        left:25%;
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+        vertical-align: middle;
     }
     .manlistinfo{
         font-weight: bold;
